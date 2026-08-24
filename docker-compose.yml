@@ -1,0 +1,59 @@
+version: "3.8"
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n-ebay-pipeline
+    restart: unless-stopped
+    ports:
+      - "5678:5678"           # Open http://localhost:5678 in your browser
+    environment:
+      # ── Timezone (Adelaide) ──────────────────────────────────────
+      - GENERIC_TIMEZONE=Australia/Adelaide
+      - TZ=Australia/Adelaide
+
+      # ── n8n base URL (local Docker) ──────────────────────────────
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+
+      # ── File access permissions ─────────────────────────────────
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
+      - N8N_RESTRICT_FILE_ACCESS_TO=/data/ebay
+
+      # ── Security: Basic auth for the n8n UI ──────────────────────
+      # Change the username and password below before running
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=ebay2024
+
+      # ── Execution settings ───────────────────────────────────────
+      - EXECUTIONS_DATA_SAVE_ON_ERROR=all
+      - EXECUTIONS_DATA_SAVE_ON_SUCCESS=all
+      - EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS=true
+      - N8N_LOG_LEVEL=info
+
+      # ── Disable telemetry ────────────────────────────────────────
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_VERSION_NOTIFICATIONS_ENABLED=false
+
+    volumes:
+      # ── Persist n8n data (workflows, credentials, execution history)
+      - n8n_data:/home/node/.n8n
+
+      # ── Mount your Ebay folder so n8n can read/write CSV files ───
+      # Windows path on the left → container path on the right
+      - C:\Users\andre\Ebay:/data/ebay
+
+    # ── Healthcheck ──────────────────────────────────────────────
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:5678/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  n8n_data:
+    driver: local
