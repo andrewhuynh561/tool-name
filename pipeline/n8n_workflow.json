@@ -10,7 +10,10 @@
       "name": "📂 Trigger: Read CSV File",
       "type": "n8n-nodes-base.readBinaryFile",
       "typeVersion": 1,
-      "position": [0, 300]
+      "position": [
+        0,
+        300
+      ]
     },
     {
       "parameters": {
@@ -21,18 +24,24 @@
       "name": "Parse CSV",
       "type": "n8n-nodes-base.spreadsheetFile",
       "typeVersion": 2,
-      "position": [240, 300]
+      "position": [
+        240,
+        300
+      ]
     },
     {
       "parameters": {
         "mode": "runOnceForEachItem",
-        "jsCode": "const CONFIG = {\n  cloudinaryCloudName: 'smqochzy',\n  watermarkPublicId: 'rm_deliverandfree',\n  watermarkGravity: 'north_west',\n  watermarkWidthPct: 100,\n  watermarkXOffset: 0,\n  watermarkYOffset: -20,\n  watermarkOpacity: 95,\n  openAiApiKey: 'YOUR_OPENAI_API_KEY',\n  openAiModel: 'gpt-4o-mini',\n  pricingMode: 'combined',\n  markupMultiplier: 1.35,\n  flatFee: 5.00,\n  ebayFeeRate: 0.135,\n  applyEbayFeeBuffer: true,\n  includeFreeShipping: true,\n  useFixedShipping: false,\n  estimatedShippingCost: 9.90,\n  shippingFallback: 9.90,\n  applyActiveRebate: true,\n  minimumListingPrice: 9.99,\n  charmPrice: true\n};\nreturn { json: { ...item.json, _config: CONFIG } };"
+        "jsCode": "const CONFIG = {\n  cloudinaryCloudName: 'smqochzy',\n  watermarkPublicId: 'ChatGPT_Image_Aug_26_2026_12_31_37_AM',\n  watermarkGravity: 'south',\n  watermarkWidthPct: 100,\n  watermarkXOffset: 0,\n  watermarkYOffset: 0,\n  watermarkOpacity: 95,\n  openAiApiKey: 'YOUR_OPENAI_API_KEY',\n  openAiModel: 'gpt-4o-mini',\n  pricingMode: 'combined',\n  markupMultiplier: 1.35,\n  flatFee: 5.00,\n  ebayFeeRate: 0.135,\n  applyEbayFeeBuffer: true,\n  includeFreeShipping: true,\n  useFixedShipping: false,\n  estimatedShippingCost: 9.90,\n  shippingFallback: 9.90,\n  applyActiveRebate: true,\n  minimumListingPrice: 9.99,\n  charmPrice: true\n};\nreturn { json: { ...item.json, _config: CONFIG } };"
       },
       "id": "node-0-config",
       "name": "0 · Master Config",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [480, 300]
+      "position": [
+        480,
+        300
+      ]
     },
     {
       "parameters": {
@@ -43,7 +52,10 @@
       "name": "1 · Title Cleaner",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [720, 300]
+      "position": [
+        720,
+        300
+      ]
     },
     {
       "parameters": {
@@ -54,58 +66,92 @@
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            { "name": "Authorization", "value": "=Bearer {{ $json._config.openAiApiKey }}" },
-            { "name": "Content-Type", "value": "application/json" }
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json._config.openAiApiKey }}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
           ]
         },
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
-            { "name": "model", "value": "={{ $json._config.openAiModel }}" },
-            { "name": "messages", "value": "=[{\"role\":\"system\",\"content\":\"You are an eBay Australia listing title specialist. Rewrite product titles to max 80 chars. Put main search keywords first, include attributes (size, material, colour). Use AU spelling. Output ONLY final title.\"},{\"role\":\"user\",\"content\":\"Product: {{ $json._raw_title_cleaned }}\\nCategory: {{ $json._category_path }}\\nDescription: {{ $json._description_preview }}\"}]" },
-            { "name": "max_tokens", "value": 60 },
-            { "name": "temperature", "value": 0.3 }
+            {
+              "name": "model",
+              "value": "={{ $json._config.openAiModel }}"
+            },
+            {
+              "name": "messages",
+              "value": "=[{\"role\":\"system\",\"content\":\"You are an elite eBay Australia listing strategist. Rewrite product titles using the Cassini Title Formula: [Primary Keyword] [Secondary Keyword] [Key Attribute] [Size/Colour] [Benefit/AU Stock]. Rules: 1. Target exactly 75-80 characters. 2. Front-load top 2-3 exact buyer search terms in first 35 chars. 3. Use Australian English spelling. 4. NEVER use filler words (NEW, Amazing, Hot, Great, Vibrant, Sale) or punctuation symbols (*, !, @, -). 5. Output ONLY the final single title string.\"},{\"role\":\"user\",\"content\":\"Product: {{ $json._raw_title_cleaned }}\\nCategory: {{ $json._category_path }}\\nDescription: {{ $json._description_preview }}\"}]"
+            },
+            {
+              "name": "max_tokens",
+              "value": 60
+            },
+            {
+              "name": "temperature",
+              "value": 0.3
+            }
           ]
         },
-        "options": { "timeout": 30000 }
+        "options": {
+          "timeout": 30000
+        }
       },
       "id": "node-2-openai",
       "name": "2 · OpenAI Title Generator",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
-      "position": [960, 300]
+      "position": [
+        960,
+        300
+      ]
     },
     {
       "parameters": {
         "mode": "runOnceForEachItem",
-        "jsCode": "let aiTitle = '';\ntry {\n  aiTitle = (item.json.choices[0].message.content || '').trim().replace(/^\"|\"$/g, '').replace(/^'|'$/g, '').trim();\n} catch (e) { aiTitle = ''; }\nif (aiTitle.length > 80) {\n  aiTitle = aiTitle.substring(0, 80);\n  const lastSpace = aiTitle.lastIndexOf(' ');\n  if (lastSpace > 50) aiTitle = aiTitle.substring(0, lastSpace);\n}\nconst fallback = item.json._raw_title_cleaned || item.json['Title'] || '';\nconst finalTitle = (aiTitle.length > 5) ? aiTitle : fallback.substring(0, 80);\nreturn {\n  json: {\n    ...item.json,\n    _ebay_title: finalTitle,\n    _title_length: finalTitle.length,\n    _title_source: aiTitle.length > 5 ? 'ai' : 'fallback'\n  }\n};"
+        "jsCode": "let aiTitle = '';\ntry {\n  aiTitle = (item.json.choices[0].message.content || '').trim().replace(/^\"|\"$/g, '').replace(/^'|'$/g, '').trim();\n} catch (e) { aiTitle = ''; }\nif (aiTitle.length > 80) {\n  aiTitle = aiTitle.substring(0, 80);\n  const lastSpace = aiTitle.lastIndexOf(' ');\n  if (lastSpace > 50) aiTitle = aiTitle.substring(0, lastSpace);\n}\nconst fallback = item.json._raw_title_cleaned || item.json['Title'] || '';\nconst finalTitle = (aiTitle.length > 5) ? aiTitle : fallback.substring(0, 80);\nreturn {\n  json: {\n    ...item.json,\n    _ebay_title: finalTitle,\n    _title_length: finalTitle.length,\n    _title_source: aiTitle.length > 5 ? 'ai' : 'fallback'\n  }\n};\n"
       },
       "id": "node-3-title-extract",
       "name": "3 · Extract AI Title",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [1200, 300]
+      "position": [
+        1200,
+        300
+      ]
     },
     {
       "parameters": {
         "mode": "runOnceForEachItem",
-        "jsCode": "const cfg = item.json._config;\nconst costRaw = item.json['Cost per item'] || '0';\nlet cost = parseFloat(String(costRaw).replace(/[^0-9.]/g, '')) || 0;\nif (cost === 0) return { json: { ...item.json, _ebay_price: null, _price_error: 'Cost is 0' } };\nlet rebateApplied = 0;\nif (cfg.applyActiveRebate) {\n  const rebatePct = parseFloat(item.json['Rebate %'] || '0') || 0;\n  const rebateStart = item.json['Rebate Start Date'] || '';\n  const rebateEnd = item.json['Rebate End Date'] || '';\n  const now = new Date();\n  let active = rebatePct > 0;\n  if (rebateStart && rebateEnd) {\n    active = rebatePct > 0 && now >= new Date(rebateStart) && now <= new Date(rebateEnd);\n  }\n  if (active) {\n    rebateApplied = cost * (rebatePct / 100);\n    cost -= rebateApplied;\n  }\n}\nconst metroColumns = ['Delivery(ACT)', 'Delivery(NSW_M)', 'Delivery(QLD_M)', 'Delivery(SA_M)', 'Delivery(VIC_M)', 'Delivery(WA_M)'];\nlet shippingCost = cfg.shippingFallback;\nif (!cfg.useFixedShipping) {\n  const metros = metroColumns.map(c => parseFloat(String(item.json[c] || '0').replace(/[^0-9.]/g, ''))).filter(v => v > 0);\n  if (metros.length > 0) shippingCost = Math.max(...metros);\n} else { shippingCost = cfg.estimatedShippingCost; }\nlet price;\nif (cfg.pricingMode === 'percentage') price = cost * cfg.markupMultiplier;\nelse if (cfg.pricingMode === 'flat') price = cost + cfg.flatFee;\nelse price = (cost * cfg.markupMultiplier) + cfg.flatFee;\nif (cfg.includeFreeShipping) price += shippingCost;\nif (cfg.applyEbayFeeBuffer) price = price / (1 - cfg.ebayFeeRate);\nif (price < cfg.minimumListingPrice) price = cfg.minimumListingPrice;\nif (cfg.charmPrice && price > 1) {\n  price = Math.ceil(price) - 0.01;\n  if (price < cfg.minimumListingPrice) price = cfg.minimumListingPrice;\n}\nconst finalPrice = parseFloat(price.toFixed(2));\nconst ebayFee = parseFloat((finalPrice * cfg.ebayFeeRate).toFixed(2));\nconst profit = parseFloat((finalPrice - cost - shippingCost - ebayFee).toFixed(2));\nconst marginPct = parseFloat(((profit / finalPrice) * 100).toFixed(1));\nreturn {\n  json: {\n    ...item.json,\n    _cost_after_rebate: parseFloat(cost.toFixed(2)),\n    _rebate_applied: parseFloat(rebateApplied.toFixed(2)),\n    _shipping_baked: parseFloat(shippingCost.toFixed(2)),\n    _ebay_fee_est: ebayFee,\n    _ebay_price: finalPrice.toFixed(2),\n    _profit_estimate: profit,\n    _margin_pct: marginPct\n  }\n};"
+        "jsCode": "const cfg = item.json._config;\nconst costRaw = item.json['Cost per item'] || '0';\nlet cost = parseFloat(String(costRaw).replace(/[^0-9.]/g, '')) || 0;\nif (cost === 0) return { json: { ...item.json, _ebay_price: null, _price_error: 'Cost is 0' } };\nlet rebateApplied = 0;\nif (cfg.applyActiveRebate) {\n  const rebatePct = parseFloat(item.json['Rebate %'] || '0') || 0;\n  const rebateStart = item.json['Rebate Start Date'] || '';\n  const rebateEnd = item.json['Rebate End Date'] || '';\n  const now = new Date();\n  let active = rebatePct > 0;\n  if (rebateStart && rebateEnd) {\n    active = rebatePct > 0 && now >= new Date(rebateStart) && now <= new Date(rebateEnd);\n  }\n  if (active) {\n    rebateApplied = cost * (rebatePct / 100);\n    cost -= rebateApplied;\n  }\n}\nconst metroColumns = ['Delivery(ACT)', 'Delivery(NSW_M)', 'Delivery(QLD_M)', 'Delivery(SA_M)', 'Delivery(VIC_M)', 'Delivery(WA_M)'];\nlet shippingCost = cfg.shippingFallback;\nif (!cfg.useFixedShipping) {\n  const metros = metroColumns.map(c => parseFloat(String(item.json[c] || '0').replace(/[^0-9.]/g, ''))).filter(v => v > 0);\n  if (metros.length > 0) shippingCost = Math.max(...metros);\n} else { shippingCost = cfg.estimatedShippingCost; }\nlet price;\nif (cfg.pricingMode === 'percentage') price = cost * cfg.markupMultiplier;\nelse if (cfg.pricingMode === 'flat') price = cost + cfg.flatFee;\nelse price = (cost * cfg.markupMultiplier) + cfg.flatFee;\nif (cfg.includeFreeShipping) price += shippingCost;\nif (cfg.applyEbayFeeBuffer) price = price / (1 - cfg.ebayFeeRate);\nif (price < cfg.minimumListingPrice) price = cfg.minimumListingPrice;\nif (cfg.charmPrice && price > 1) {\n  price = Math.ceil(price) - 0.01;\n  if (price < cfg.minimumListingPrice) price = cfg.minimumListingPrice;\n}\nconst finalPrice = parseFloat(price.toFixed(2));\nconst ebayFee = parseFloat((finalPrice * cfg.ebayFeeRate).toFixed(2));\nconst profit = parseFloat((finalPrice - cost - shippingCost - ebayFee).toFixed(2));\nconst marginPct = parseFloat(((profit / finalPrice) * 100).toFixed(1));\nreturn {\n  json: {\n    ...item.json,\n    _cost_after_rebate: parseFloat(cost.toFixed(2)),\n    _rebate_applied: parseFloat(rebateApplied.toFixed(2)),\n    _shipping_baked: parseFloat(shippingCost.toFixed(2)),\n    _ebay_fee_est: ebayFee,\n    _ebay_price: finalPrice.toFixed(2),\n    _profit_estimate: profit,\n    _margin_pct: marginPct\n  }\n};\n"
       },
       "id": "node-4-price",
       "name": "4 · Price Calculator",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [1440, 300]
+      "position": [
+        1440,
+        300
+      ]
     },
     {
       "parameters": {
         "conditions": {
-          "options": { "caseSensitive": false },
+          "options": {
+            "caseSensitive": false
+          },
           "conditions": [
             {
               "leftValue": "={{ $json._price_error }}",
               "rightValue": "",
-              "operator": { "type": "string", "operation": "equals" }
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
             }
           ]
         }
@@ -114,18 +160,24 @@
       "name": "5 · Filter Invalid Rows",
       "type": "n8n-nodes-base.filter",
       "typeVersion": 2,
-      "position": [1680, 300]
+      "position": [
+        1680,
+        300
+      ]
     },
     {
       "parameters": {
         "mode": "runOnceForEachItem",
-        "jsCode": "const cfg = item.json._config;\nconst imageList = [item.json['Image 1'], item.json['Image 2'], item.json['Image 3'], item.json['Image 4'], item.json['Image 5'], item.json['Image 6']]\n  .map(u => (u || '').trim()).filter(u => u.length > 0 && u.startsWith('http'));\nif (imageList.length === 0) return { json: { ...item.json, _ebay_images: '', _image_error: 'No images' } };\nconst cloudName = cfg.cloudinaryCloudName;\nconst wId = cfg.watermarkPublicId;\nconst gravity = cfg.watermarkGravity || 'north_west';\nconst widthScale = (cfg.watermarkWidthPct / 100).toFixed(2);\nconst xOffset = cfg.watermarkXOffset || 15;\nconst yOffset = cfg.watermarkYOffset || 15;\nconst opacity = cfg.watermarkOpacity || 95;\nconst primaryUrl = imageList[0];\nconst watermarkLayer = `l_${wId},w_1.0,c_scale,g_north,y_0,fl_relative`;\nconst watermarkedPrimary = `https://res.cloudinary.com/${cloudName}/image/fetch/${watermarkLayer}/${primaryUrl}`;\nconst allImages = [watermarkedPrimary, ...imageList.slice(1)];\nconst picURLs = allImages.join('|');\nreturn {\n  json: {\n    ...item.json,\n    _ebay_images: picURLs,\n    _primary_watermarked: watermarkedPrimary,\n    _image_count: allImages.length\n  }\n};"
+        "jsCode": "const cfg = item.json._config;\nconst imageList = [item.json['Image 1'], item.json['Image 2'], item.json['Image 3'], item.json['Image 4'], item.json['Image 5'], item.json['Image 6']]\n  .map(u => (u || '').trim()).filter(u => u.length > 0 && u.startsWith('http'));\nif (imageList.length === 0) return { json: { ...item.json, _ebay_images: '', _image_error: 'No images' } };\nconst cloudName = cfg.cloudinaryCloudName;\nconst wId = cfg.watermarkPublicId;\nconst gravity = cfg.watermarkGravity || 'north_west';\nconst widthScale = (cfg.watermarkWidthPct / 100).toFixed(2);\nconst xOffset = cfg.watermarkXOffset || 0;\nconst yOffset = cfg.watermarkYOffset || 0;\nconst opacity = cfg.watermarkOpacity || 95;\nconst watermarkLayer = `l_${wId},w_${widthScale},c_scale,g_${gravity},x_${xOffset},y_${yOffset},o_${opacity},fl_relative`;\n// Option A: Only Image 1 gets Cloudinary watermark badge; secondary gallery images stay direct CDN URLs\nconst allImages = imageList.map((url, idx) => idx === 0 ? `https://res.cloudinary.com/${cloudName}/image/fetch/${watermarkLayer}/${url}` : url);\nconst picURLs = allImages.join('|');\nreturn {\n  json: {\n    ...item.json,\n    _ebay_images: picURLs,\n    _primary_watermarked: allImages[0],\n    _image_count: allImages.length\n  }\n};\n"
       },
       "id": "node-6-image",
       "name": "6 · Image Watermarker",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [1920, 300]
+      "position": [
+        1920,
+        300
+      ]
     },
     {
       "parameters": {
@@ -136,18 +188,24 @@
       "name": "7 · HTML Description Builder",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2160, 300]
+      "position": [
+        2160,
+        300
+      ]
     },
     {
       "parameters": {
         "mode": "runOnceForEachItem",
-        "jsCode": "const CATEGORY_MAP = { 'Pickleball': '43311', 'Pet': '1281', 'Massage': '36444', 'Yoga': '158086', 'Sports': '382', 'Tools': '631', 'default': '11700' };\nconst cat = item.json['Category'] || '';\nconst subcat = item.json['Subcategory'] || '';\nconst subsubcat = item.json['Sub_subcategory'] || '';\nlet categoryId = CATEGORY_MAP['default'];\nfor (const level of [subsubcat, subcat, cat]) {\n  if (!level) continue;\n  for (const [key, val] of Object.entries(CATEGORY_MAP)) {\n    if (level.toLowerCase().includes(key.toLowerCase())) { categoryId = val; break; }\n  }\n  if (categoryId !== CATEGORY_MAP['default']) break;\n}\nconst sku = item.json['SKU'] || '';\nconst qty = parseInt(item.json['QOH'] || '0', 10);\nconst listQty = qty > 0 ? qty : 1;\nconst ebayRow = {\n  '*Action': 'Add',\n  '*Title': item.json._ebay_title,\n  '*Category': categoryId,\n  'CustomLabel': `DSZ-${sku}`,\n  '*ConditionID': '1000',\n  '*StartPrice': item.json._ebay_price,\n  '*Quantity': listQty,\n  '*Format': 'FixedPrice',\n  '*Duration': 'GTC',\n  'ShippingType': 'Free',\n  'ShippingService-1:Option': 'AU_StandardDelivery',\n  'ShippingService-1:Cost': '0.00',\n  'DispatchTimeMax': '1',\n  'Country': 'AU',\n  '*Location': 'Australia',\n  'PicURL': item.json._ebay_images,\n  'Description': item.json._ebay_description_html,\n  '_dsz_sku': sku,\n  '_profit_estimate': item.json._profit_estimate,\n  '_margin_pct': item.json._margin_pct + '%'\n};\nreturn { json: ebayRow };"
+        "jsCode": "const CATEGORY_MAP = {\n  'pickleball': '184357',\n  'grooming': '177794',\n  'clipper': '177794',\n  'pet cleaning': '177794',\n  'massage gun': '36449',\n  'massager': '36449',\n  'massage': '36449',\n  'yoga mat': '158929',\n  'yoga': '158929',\n  'pilates': '158929',\n  'laptop stand': '175685',\n  'chopper': '20638',\n  'kitchen': '20638',\n  'fan': '43509',\n  'headlamp': '106988',\n  'kegel': '15280',\n  'thigh': '15280',\n  'radio': '96954',\n  'cat carrier': '177789',\n  'cat shelter': '177789',\n  'christmas': '170090',\n  'pillow': '20563',\n  'wallet': '2996',\n  'cat toy': '20741',\n  'sewing': '20160',\n  'table lamp': '20702',\n  'bottle lamp': '20702',\n  'shower': '181379',\n  'hiking pole': '84886',\n  'trekking': '84886',\n  'mouse': '23160',\n  'chest rig': '177880',\n  'water bag': '181381',\n  'ankle brace': '36449',\n  'battle rope': '179803',\n  'flosser': '106095',\n  'oral care': '106095',\n  'watch': '178893',\n  'wristband': '178893',\n  'scrubber': '20636',\n  'lunch bag': '54316',\n  'hair dryer': '101419',\n  'lock picking': '183831',\n  'gravity pick': '183831',\n  'tools': '183831',\n  'backpack': '169291',\n  'hobo bag': '169291',\n  'handbag': '169291',\n  'default': '11700'\n};\nconst cat = item.json['Category'] || '';\nconst subcat = item.json['Subcategory'] || '';\nconst subsubcat = item.json['Sub_subcategory'] || '';\nconst title = item.json._ebay_title || item.json['Title'] || '';\nconst searchText = `${subsubcat} ${subcat} ${cat} ${title}`.toLowerCase();\nlet categoryId = CATEGORY_MAP['default'];\nfor (const [k, v] of Object.entries(CATEGORY_MAP)) {\n  if (k !== 'default' && searchText.includes(k)) { categoryId = v; break; }\n}\nconst sku = item.json['SKU'] || '';\nconst rawQty = parseInt(item.json['QOH'] || '0', 10);\nconst listQty = Math.min(rawQty > 0 ? rawQty : 1, 3);\n\n// Item specifics extraction\nconst desc = (item.json['Description'] || '').toLowerCase();\nlet material = 'High Quality Material';\nconst matMatches = [{ k: 'carbon fiber', v: 'Carbon Fiber' }, { k: 'fiberglass', v: 'Fiberglass' }, { k: 'stainless steel', v: 'Stainless Steel' }, { k: 'aluminum alloy', v: 'Aluminum Alloy' }, { k: 'pu leather', v: 'PU Leather' }, { k: 'memory foam', v: 'Memory Foam' }, { k: 'oxford', v: 'Oxford Fabric' }, { k: 'canvas', v: 'Canvas' }, { k: 'corduroy', v: 'Corduroy' }, { k: 'abs', v: 'ABS Plastic' }, { k: 'silicone', v: 'Silicone' }, { k: 'tpe', v: 'TPE' }, { k: 'pvc', v: 'Heavy Duty PVC' }];\nfor (const m of matMatches) { if (`${title} ${desc}`.toLowerCase().includes(m.k)) { material = m.v; break; } }\nlet colour = 'Multicoloured';\nconst colours = ['Black', 'White', 'Grey', 'Gray', 'Blue', 'Pink', 'Purple', 'Green', 'Silver', 'Gold', 'Yellow', 'Khaki', 'Beige', 'Red', 'Orange'];\nfor (const c of colours) { if (new RegExp(`\\\\b${c}\\\\b`, 'i').test(title)) { colour = c === 'Gray' ? 'Grey' : c; break; } }\nlet power = 'Manual / Non-Electric';\nif (desc.includes('solar')) power = 'Solar Powered';\nelse if (desc.includes('rechargeable')) power = 'USB Rechargeable Battery';\nelse if (desc.includes('usb')) power = 'USB Powered';\n\nlet department = 'Unisex Adults';\nif (searchText.includes('women') || searchText.includes('lady') || searchText.includes('hobo bag') || searchText.includes('handbag')) department = 'Women';\nelse if (searchText.includes('men') || searchText.includes('wallet')) department = 'Men';\n\nlet style = 'Modern';\nif (searchText.includes('hobo')) style = 'Hobo Bag';\nelse if (searchText.includes('tote')) style = 'Tote';\nelse if (searchText.includes('shoulder')) style = 'Shoulder Bag';\nelse if (searchText.includes('backpack')) style = 'Backpack';\nelse if (searchText.includes('chest rig')) style = 'Tactical Bag';\n\nconst ebayRow = {\n  '*Action': 'Add',\n  '*Title': item.json._ebay_title,\n  '*Category': categoryId,\n  'CustomLabel': `DSZ-${sku}`,\n  '*ConditionID': '1000',\n  '*StartPrice': item.json._ebay_price,\n  '*Quantity': listQty,\n  '*Format': 'FixedPrice',\n  '*Duration': 'GTC',\n  'ShippingType': 'Free',\n  'ShippingService-1:Option': 'AU_StandardDelivery',\n  'ShippingService-1:Cost': '0.00',\n  'DispatchTimeMax': '1',\n  'Country': 'AU',\n  '*Location': 'Australia',\n  'PicURL': item.json._ebay_images,\n  'C:Brand': 'Unbranded',\n  'C:Type': subsubcat || subcat || 'Accessories',\n  'C:Material': material,\n  'C:Colour': colour,\n  'C:Department': department,\n  'C:Style': style,\n  'C:Power Source': power,\n  'C:Features': 'Portable, Lightweight, Durable',\n  'C:MPN': `DSZ-${sku}`,\n  'Description': item.json._ebay_description_html,\n  '_dsz_sku': sku,\n  '_profit_estimate': item.json._profit_estimate,\n  '_margin_pct': item.json._margin_pct + '%'\n};\nreturn { json: ebayRow };\n"
       },
       "id": "node-8-assembler",
       "name": "8 · eBay Row Assembler",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2400, 300]
+      "position": [
+        2400,
+        300
+      ]
     },
     {
       "parameters": {
@@ -159,7 +217,10 @@
       "name": "9 · Export eBay CSV",
       "type": "n8n-nodes-base.spreadsheetFile",
       "typeVersion": 2,
-      "position": [2640, 300]
+      "position": [
+        2640,
+        300
+      ]
     },
     {
       "parameters": {
@@ -171,24 +232,151 @@
       "name": "10 · Save to Disk",
       "type": "n8n-nodes-base.writeBinaryFile",
       "typeVersion": 1,
-      "position": [2880, 300]
+      "position": [
+        2880,
+        300
+      ]
     }
   ],
   "connections": {
-    "📂 Trigger: Read CSV File": { "main": [[{ "node": "Parse CSV", "type": "main", "index": 0 }]] },
-    "Parse CSV": { "main": [[{ "node": "0 · Master Config", "type": "main", "index": 0 }]] },
-    "0 · Master Config": { "main": [[{ "node": "1 · Title Cleaner", "type": "main", "index": 0 }]] },
-    "1 · Title Cleaner": { "main": [[{ "node": "2 · OpenAI Title Generator", "type": "main", "index": 0 }]] },
-    "2 · OpenAI Title Generator": { "main": [[{ "node": "3 · Extract AI Title", "type": "main", "index": 0 }]] },
-    "3 · Extract AI Title": { "main": [[{ "node": "4 · Price Calculator", "type": "main", "index": 0 }]] },
-    "4 · Price Calculator": { "main": [[{ "node": "5 · Filter Invalid Rows", "type": "main", "index": 0 }]] },
-    "5 · Filter Invalid Rows": { "main": [[{ "node": "6 · Image Watermarker", "type": "main", "index": 0 }]] },
-    "6 · Image Watermarker": { "main": [[{ "node": "7 · HTML Description Builder", "type": "main", "index": 0 }]] },
-    "7 · HTML Description Builder": { "main": [[{ "node": "8 · eBay Row Assembler", "type": "main", "index": 0 }]] },
-    "8 · eBay Row Assembler": { "main": [[{ "node": "9 · Export eBay CSV", "type": "main", "index": 0 }]] },
-    "9 · Export eBay CSV": { "main": [[{ "node": "10 · Save to Disk", "type": "main", "index": 0 }]] }
+    "📂 Trigger: Read CSV File": {
+      "main": [
+        [
+          {
+            "node": "Parse CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse CSV": {
+      "main": [
+        [
+          {
+            "node": "0 · Master Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0 · Master Config": {
+      "main": [
+        [
+          {
+            "node": "1 · Title Cleaner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 · Title Cleaner": {
+      "main": [
+        [
+          {
+            "node": "2 · OpenAI Title Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2 · OpenAI Title Generator": {
+      "main": [
+        [
+          {
+            "node": "3 · Extract AI Title",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3 · Extract AI Title": {
+      "main": [
+        [
+          {
+            "node": "4 · Price Calculator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4 · Price Calculator": {
+      "main": [
+        [
+          {
+            "node": "5 · Filter Invalid Rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5 · Filter Invalid Rows": {
+      "main": [
+        [
+          {
+            "node": "6 · Image Watermarker",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6 · Image Watermarker": {
+      "main": [
+        [
+          {
+            "node": "7 · HTML Description Builder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7 · HTML Description Builder": {
+      "main": [
+        [
+          {
+            "node": "8 · eBay Row Assembler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "8 · eBay Row Assembler": {
+      "main": [
+        [
+          {
+            "node": "9 · Export eBay CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "9 · Export eBay CSV": {
+      "main": [
+        [
+          {
+            "node": "10 · Save to Disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
   },
-  "settings": { "executionOrder": "v1" },
+  "settings": {
+    "executionOrder": "v1"
+  },
   "staticData": null,
-  "meta": { "instanceId": "dsz-to-ebay-au-pipeline-v3" }
+  "meta": {
+    "instanceId": "dsz-to-ebay-au-pipeline-v3"
+  }
 }
