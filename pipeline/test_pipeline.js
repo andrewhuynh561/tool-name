@@ -23,7 +23,7 @@ function parseCSVLine(text) {
   for (let i = 0; i < text.length; i++) {
     const c = text[i];
     if (c === '"') {
-      if (inQuotes && text[i+1] === '"') {
+      if (inQuotes && text[i + 1] === '"') {
         cur += '"';
         i++;
       } else {
@@ -50,7 +50,7 @@ let insideQuotes = false;
 for (let i = 0; i < csvContent.length; i++) {
   const char = csvContent[i];
   if (char === '"') {
-    if (insideQuotes && csvContent[i+1] === '"') {
+    if (insideQuotes && csvContent[i + 1] === '"') {
       curCell += '"';
       i++;
     } else {
@@ -60,7 +60,7 @@ for (let i = 0; i < csvContent.length; i++) {
     curRow.push(curCell.trim());
     curCell = '';
   } else if ((char === '\n' || char === '\r') && !insideQuotes) {
-    if (char === '\r' && csvContent[i+1] === '\n') i++;
+    if (char === '\r' && csvContent[i + 1] === '\n') i++;
     curRow.push(curCell.trim());
     if (curRow.length >= headers.length) {
       rows.push(curRow);
@@ -109,55 +109,108 @@ const CONFIG = {
 
 // Official eBay Australia (Site ID 15) Leaf Category Taxonomy
 const CATEGORY_MAP = {
-  'pickleball': '184357',     // Sporting Goods > Racquet Sports > Pickleball > Paddles (LIVE)
-  'grooming': '177794',       // Pet Supplies > Dog Supplies > Grooming > Clippers & Blades (LIVE)
-  'clipper': '177794',        // Pet Supplies > Dog Supplies > Grooming > Clippers & Blades (LIVE)
-  'pet cleaning': '177794',   // Pet Supplies > Dog Supplies > Grooming > Clippers & Blades (LIVE)
-  'massage gun': '36449',     // Health & Beauty > Massage > Massagers
-  'massager': '36449',        // Health & Beauty > Massage > Massagers
-  'massage': '36449',         // Health & Beauty > Massage > Massagers
-  'yoga mat': '158929',       // Sporting Goods > Fitness > Yoga & Pilates > Mat Carriers & Bags
-  'yoga': '158929',           // Sporting Goods > Fitness > Yoga & Pilates > Mat Carriers & Bags
-  'pilates': '158929',        // Sporting Goods > Fitness > Yoga & Pilates > Mat Carriers & Bags
-  'laptop stand': '175685',   // Computers/Tablets & Networking > Laptop Accessories > Laptop Stands & Risers
-  'chopper': '20638',         // Home & Garden > Kitchen Tools & Gadgets > Choppers & Mincers
+  'pickleball': '184357',
+  'grooming': '177794',
+  'clipper': '177794',
+  'pet': '177794',
+  'cat': '177789',
+  'dog': '177794',
+  'bird': '177794',
+  'massage': '36449',
+  'massager': '36449',
+  'yoga': '158929',
+  'fitness': '179803',
+  'gym': '179803',
+  'exercise': '179803',
+  'push up': '179803',
+  'laptop': '175685',
+  'computer': '175685',
+  'chopper': '20638',
   'kitchen': '20638',
-  'fan': '43509',             // Home Appliances > Heating, Cooling & Air > Portable Fans
-  'headlamp': '106988',       // Sporting Goods > Camping & Hiking > Flashlights & Headlamps
-  'kegel': '15280',           // Sporting Goods > Fitness, Running & Yoga > Strength Training
-  'thigh': '15280',
-  'radio': '96954',           // Sound & Vision > Portable Audio > Portable AM/FM Radios
-  'cat carrier': '177789',    // Pet Supplies > Cat Supplies > Beds
-  'cat shelter': '177789',
-  'christmas': '170090',      // Home & Garden > Holiday & Seasonal Decor > Ornaments
-  'pillow': '20563',          // Home & Garden > Bedding > Pillows
-  'wallet': '2996',           // Clothing, Shoes & Accessories > Men's Accessories > Wallets
-  'cat toy': '20741',         // Pet Supplies > Cat Supplies > Cat Toys
-  'sewing': '20160',          // Crafts > Sewing > Sewing Machines
-  'table lamp': '20702',      // Home & Garden > Lamps, Lighting & Ceiling Fans > Lamps
-  'bottle lamp': '20702',
-  'shower': '181379',         // Sporting Goods > Camping & Hiking > Camp Sanitation
-  'hiking pole': '84886',     // Sporting Goods > Camping & Hiking > Hiking Poles
-  'trekking': '84886',
-  'mouse': '23160',           // Computers/Tablets & Networking > Keyboards, Mice & Pointers > Mice
-  'chest rig': '177880',      // Sporting Goods > Hunting > Tactical Bags & Packs
-  'water bag': '181381',      // Sporting Goods > Camping & Hiking > Water Storage
-  'ankle brace': '36449',     // Health & Beauty > Massage > Massagers
-  'battle rope': '179803',    // Sporting Goods > Fitness, Running & Yoga > Exercise Straps & Ropes
-  'flosser': '106095',        // Health & Beauty > Oral Care > Dental Floss & Flossers
-  'oral care': '106095',
-  'watch': '178893',          // Smart Watches & Fitness Trackers
+  'cookware': '20638',
+  'press': '20638',
+  'food storage': '20635',
+  'container': '20635',
+  'storage': '20635',
+  'fan': '43509',
+  'headlamp': '16037',
+  'flashlight': '16037',
+  'kegel': '15280',
+  'pelvic': '15280',
+  'radio': '96954',
+  'speaker': '96954',
+  'christmas': '170091',
+  'halloween': '170091',
+  'costume': '170091',
+  'pillow': '20563',
+  'cushion': '20563',
+  'towel': '20572',
+  'mat': '20572',
+  'canopy': '20563',
+  'diffuser': '20561',
+  'aroma': '20561',
+  'humidifier': '20561',
+  'fragrance': '20561',
+  'wallet': '2996',
+  'sewing': '3118',
+  'lamp': '20702',
+  'light': '20702',
+  'shower': '181379',
+  'hiking': '181380',
+  'trekking': '181380',
+  'camping': '181378',
+  'hammock': '181378',
+  'mouse': '23160',
+  'gaming': '23160',
+  'chest rig': '180126',
+  'tactical': '180126',
+  'water bag': '181382',
+  'hydration': '181382',
+  'brace': '36449',
+  'flosser': '31770',
+  'trimmer': '31770',
+  'shaver': '31770',
+  'toothbrush': '31770',
+  'watch': '178893',
   'wristband': '178893',
-  'scrubber': '20636',        // Home & Garden > Household Cleaning Products > Cleaning Brushes
-  'lunch bag': '54316',       // Home & Garden > Kitchen, Dining & Bar > Food Storage > Lunch Bags
-  'hair dryer': '101419',     // Health & Beauty > Hair Care & Styling > Hair Dryers
-  'lock picking': '183831',   // Business & Industrial > Access Control > Locksmith Equipment > Locksmithing Tools
-  'gravity pick': '183831',
-  'tools': '183831',
-  'backpack': '169291',       // Clothing, Shoes & Accessories > Women's Bags & Handbags
-  'hobo bag': '169291',
-  'handbag': '169291',
-  'default': '11700'
+  'scrubber': '20636',
+  'cleaning': '20636',
+  'lunch bag': '177074',
+  'cooler': '177074',
+  'hair': '31413',
+  'dryer': '31413',
+  'straightener': '31413',
+  'backpack': '169291',
+  'bag': '169291',
+  'purse': '169291',
+  'car': '33695',
+  'auto': '33695',
+  'rv': '33695',
+  'key': '45230',
+  'keychain': '45230',
+  'cap': '45230',
+  'goggle': '45230',
+  'scarf': '45230',
+  'shawl': '45230',
+  'tool': '3187',
+  'gardening': '29524',
+  'moss': '181036',
+  'turf': '181036',
+  'binoculars': '31724',
+  'night vision': '31724',
+  'vacuum': '20613',
+  'dehumidifier': '20613',
+  'heater': '20613',
+  'fidget': '19016',
+  'toy': '19016',
+  'novelty': '19016',
+  'bike': '58100',
+  'horn': '58100',
+  'lock': '58100',
+  'earplugs': '181379',
+  'file': '175685',
+  'office': '175685',
+  'default': '125760'
 };
 
 // Item Specifics Extractor
@@ -242,11 +295,17 @@ function extractSpecs(item, cleanTitle) {
     type: type,
     material: material,
     colour: colour,
-    power: power,
-    features: features,
     department: department,
     style: style,
-    mpn: `DSZ-${item.SKU}`
+    power: power,
+    features: features,
+    mpn: `DSZ-${item.SKU}`,
+    model: `DSZ-${item.SKU}`,
+    itemWidth: '10 cm',
+    itemHeight: '15 cm',
+    bandMaterial: 'Silicone',
+    caseSize: '40 mm',
+    compatibleOS: 'Android / iOS'
   };
 }
 
@@ -256,8 +315,13 @@ const ebayRows = [];
 parsedItems.forEach((item, index) => {
   if (!item.SKU || !item.Title) return;
 
-  // Node 1: Title Cleaner (Strip supplier code, model prefix, color prefix)
   const rawTitle = (item['Title'] || '').trim();
+  const rawTitleLower = rawTitle.toLowerCase();
+  const prohibitedTerms = ['lock picking', 'locksmith', 'gravity pick', 'lockpick', 'switchblade', 'butterfly knife', 'brass knuckles', 'taser', 'stun gun', 'replica gun'];
+  if (prohibitedTerms.some(t => rawTitleLower.includes(t))) {
+    console.log(`[#${index + 1}] 🚫 FILTERED PROHIBITED ITEM: ${item.SKU} (${rawTitle})`);
+    return;
+  }
   let cleanedTitle = rawTitle
     .replace(/^[A-Z0-9]{2,}-[A-Z0-9-]+\s+/i, '')
     .replace(/^LC-[A-Z0-9-]+\s+/i, '')
@@ -286,7 +350,7 @@ parsedItems.forEach((item, index) => {
   // Node 4: Price Calculator
   const costRaw = item['Cost per item'] || item['Price'] || '0';
   let cost = parseFloat(String(costRaw).replace(/[^0-9.]/g, '')) || 0;
-  
+
   let rebateApplied = 0;
   const rebatePct = parseFloat(item['Rebate %'] || '0') || 0;
   if (rebatePct > 0) {
@@ -298,11 +362,17 @@ parsedItems.forEach((item, index) => {
   const metroVals = metroCols.map(c => parseFloat(String(item[c] || '0').replace(/[^0-9.]/g, ''))).filter(v => v > 0);
   const shippingCost = metroVals.length > 0 ? Math.max(...metroVals) : CONFIG.shippingFallback;
 
-  let price = (cost * CONFIG.markupMultiplier) + CONFIG.flatFee;
-  if (CONFIG.includeFreeShipping) price += shippingCost;
-  if (CONFIG.applyEbayFeeBuffer) price = price / (1 - CONFIG.ebayFeeRate);
+  // Original Product Cost + $2.00 Fee-Buffered Formula (Direct Sourcing / Free Shipping Assumption):
+  // Price = (Cost + $2.00) / (1 - 0.135)
+  const flatMarkup = 2.00;
+  let price = (cost + flatMarkup) / (1 - CONFIG.ebayFeeRate);
   if (price < CONFIG.minimumListingPrice) price = CONFIG.minimumListingPrice;
-  if (CONFIG.charmPrice && price > 1) price = Math.ceil(price) - 0.01;
+  if (CONFIG.charmPrice && price > 1) {
+    let charm = Math.ceil(price) - 0.01;
+    if (charm < price) charm += 1.00;
+    price = Math.ceil(charm) - 0.01;
+    if (price < CONFIG.minimumListingPrice) price = CONFIG.minimumListingPrice;
+  }
 
   const finalPriceStr = price.toFixed(2);
   const ebayFee = (price * CONFIG.ebayFeeRate).toFixed(2);
@@ -318,10 +388,32 @@ parsedItems.forEach((item, index) => {
   const allImages = imageList.map((url, idx) => idx === 0 ? `https://res.cloudinary.com/${CONFIG.cloudinaryCloudName}/image/fetch/${watermarkLayer}/${url}` : url);
   const picURLs = allImages.join('|');
 
-  // Node 7: HTML Description Builder
+  // Node 7: HTML Description Builder (PivotLiving Store Theme)
   const rawDesc = item['Description'] || '';
-  const cleanText = rawDesc.replace(/<img[^>]+>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s{2,}/g, ' ').trim();
-  const htmlDesc = `<div style="max-width:800px;font-family:Arial,sans-serif;"><h1 style="font-size:18px;color:#111;">${finalTitle}</h1><div style="background:#f4f6f9;padding:14px;border-radius:6px;"><h3>Key Features</h3><p>${cleanText.substring(0, 350)}...</p></div></div>`;
+  const heroImage = imageList[0] || '';
+  const galleryImg1 = imageList[1] || '';
+  const galleryImg2 = imageList[2] || '';
+
+  // Clean tracking pixels while preserving original full HTML description content & structure
+  let cleanDesc = rawDesc
+    .replace(/<img[^>]*dropshipzone[^>]*>/gi, '')
+    .replace(/<img[^>]*logo\.png[^>]*>/gi, '')
+    .replace(/<div>\s*<h2>Returns, Refunds and Replacements<\/h2>[\s\S]*?<\/div>/gi, '')
+    .trim();
+  if (!cleanDesc || cleanDesc.length < 20) {
+    cleanDesc = `<p>${rawDesc.replace(/<[^>]+>/g, ' ').replace(/\s{2,}/g, ' ').trim()}</p>`;
+  }
+
+  const mainImageSection = heroImage ? `<div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:20px;margin-bottom:24px;text-align:center;"><img src="${heroImage}" alt="${finalTitle.replace(/"/g, '&quot;')}" style="max-width:100%;max-height:480px;width:auto;height:auto;border-radius:6px;" /></div>` : '';
+
+  let extraGallerySection = '';
+  if (galleryImg1 && galleryImg2) {
+    extraGallerySection = `<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;"><div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:16px;text-align:center;"><img src="${galleryImg1}" alt="${finalTitle.replace(/"/g, '&quot;')}" style="max-width:100%;max-height:380px;width:auto;height:auto;border-radius:6px;" /></div><div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:16px;text-align:center;"><img src="${galleryImg2}" alt="${finalTitle.replace(/"/g, '&quot;')}" style="max-width:100%;max-height:380px;width:auto;height:auto;border-radius:6px;" /></div></div>`;
+  } else if (galleryImg1) {
+    extraGallerySection = `<div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:20px;margin-bottom:28px;text-align:center;"><img src="${galleryImg1}" alt="${finalTitle.replace(/"/g, '&quot;')}" style="max-width:100%;max-height:450px;width:auto;height:auto;border-radius:6px;" /></div>`;
+  }
+
+  const htmlDesc = `<div style="max-width:880px;margin:0 auto;background-color:#F7F5F0;border-radius:12px;padding:28px;box-sizing:border-box;border:1px solid #E2DED4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><div style="background-color:#F2EFE8;background-image:radial-gradient(#E5E0D5 1px,transparent 1px);background-size:16px 16px;border-radius:10px;padding:42px 20px 36px 20px;text-align:center;margin-bottom:28px;border:1px solid #E5E0D5;position:relative;"><a href="https://www.ebay.com.au/str/pivotliving" target="_blank" style="display:inline-block;padding:6px 20px;background-color:#FAF8F5;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:2px;color:#2C3135;text-transform:uppercase;margin-bottom:14px;border:1px solid #E6D7C3;text-decoration:none;">OFFICIAL EBAY STORE &nbsp;›</a><h1 style="font-size:38px;color:#2C3135;margin:0 0 4px 0;font-weight:600;letter-spacing:-0.5px;"><a href="https://www.ebay.com.au/str/pivotliving" target="_blank" style="color:#2C3135;text-decoration:none;">Piv<span style="position:relative;display:inline-block;">o<span style="position:absolute;left:48%;top:0;bottom:0;width:1.5px;background-color:#2C3135;transform:translateX(-50%);"></span></span>tLiving</a></h1><div style="width:240px;height:1.5px;background-color:#2C3135;margin:0 auto 12px auto;"></div><p style="font-size:14px;color:#4A5056;margin:0;letter-spacing:3px;text-transform:uppercase;font-weight:500;">Modern Lifestyle Goods</p><span style="position:absolute;right:24px;bottom:18px;color:#D8D2C6;font-size:16px;">✦</span></div><div style="display:flex;flex-wrap:wrap;justify-content:space-between;background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:14px 22px;margin-bottom:28px;font-size:12px;color:#525B62;letter-spacing:0.5px;text-transform:uppercase;font-weight:600;"><div>100% Australian Stock</div><div style="color:#D2CBC0;">|</div><div>Ships in 24 Hours</div><div style="color:#D2CBC0;">|</div><div>2–6 Days Transit</div><div style="color:#D2CBC0;">|</div><div>High Positive Feedback</div></div><div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:26px 30px;margin-bottom:28px;"><h2 style="font-size:23px;color:#2C3135;margin:0 0 10px 0;line-height:1.35;font-weight:600;">${finalTitle}</h2><div style="font-size:12px;color:#78828A;">Item Code: <span style="color:#2C3135;font-weight:600;">DSZ-${item.SKU}</span> &nbsp;•&nbsp; Condition: <span style="color:#2C3135;font-weight:600;">Brand New In Box</span></div></div>${mainImageSection}<div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:32px 34px;margin-bottom:28px;line-height:1.75;color:#383F45;font-size:14px;">${cleanDesc}</div>${extraGallerySection}<div style="background:#FFFFFF;border:1px solid #E5E0D5;border-radius:8px;padding:30px 34px;margin-bottom:28px;"><h3 style="font-size:13px;color:#78828A;margin:0 0 18px 0;font-weight:600;text-transform:uppercase;letter-spacing:1px;">Store Commitment & Customer Care</h3><div style="margin-bottom:22px;"><h4 style="font-size:14px;color:#2C3135;margin:0 0 6px 0;font-weight:600;">100% Australian Stock — Ships in 24 Hours</h4><p style="font-size:13px;line-height:1.6;color:#525B62;margin:0;">All items are held locally in domestic Australian fulfillment centers and dispatched within 24 hours of payment clearance (Monday to Friday). Estimated delivery timeframe is <strong>2 to 6 business days</strong> nationwide, with online tracking provided immediately upon dispatch.</p></div><div style="margin-bottom:22px;"><h4 style="font-size:14px;color:#2C3135;margin:0 0 6px 0;font-weight:600;">High Positive Feedback & Quality Goods</h4><p style="font-size:13px;line-height:1.6;color:#525B62;margin:0;">At <strong>PivotLiving</strong>, we maintain a strong track record of high customer feedback by carefully selecting only reliable, high-grade products. We listen closely to buyer feedback, ensuring every item delivered to your door meets high standards of quality and dependability.</p></div><div><h4 style="font-size:14px;color:#2C3135;margin:0 0 6px 0;font-weight:600;">Dedicated Customer Service</h4><p style="font-size:13px;line-height:1.6;color:#525B62;margin:0;">We are committed to providing helpful, attentive service before and after your purchase. Have a question about this item or your order? Reach out anytime via eBay Messages and our local support team will promptly assist you.</p></div></div><div style="text-align:center;padding:18px 10px 5px 10px;font-size:12px;color:#8A949E;"><p style="margin:0 0 6px 0;font-size:14px;color:#2C3135;font-weight:600;letter-spacing:1px;text-transform:uppercase;"><a href="https://www.ebay.com.au/str/pivotliving" target="_blank" style="color:#2C3135;text-decoration:none;">PivotLiving Store</a></p><p style="margin:0 0 10px 0;">Modern Lifestyle Goods &nbsp;•&nbsp; Official eBay Australia Store</p><a href="https://www.ebay.com.au/str/pivotliving" target="_blank" style="display:inline-block;padding:8px 22px;background-color:#2C3135;color:#F7F5F0;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;border-radius:4px;text-decoration:none;">Visit Our eBay Store</a></div></div>`;
 
   // Category matching
   const cat = item['Category'] || '';
@@ -361,24 +453,25 @@ parsedItems.forEach((item, index) => {
     '*Location': 'Australia',
     'PicURL': picURLs,
     'C:Brand': specs.brand,
+    'C:Model': specs.model,
     'C:Type': specs.type,
     'C:Material': specs.material,
     'C:Colour': specs.colour,
     'C:Department': specs.department,
     'C:Style': specs.style,
     'C:Power Source': specs.power,
+    'C:Item Width': specs.itemWidth,
+    'C:Item Height': specs.itemHeight,
+    'C:Band Material': specs.bandMaterial,
+    'C:Case Size': specs.caseSize,
+    'C:Compatible Operating System': specs.compatibleOS,
     'C:Features': specs.features,
     'C:MPN': specs.mpn,
-    'Description': htmlDesc,
-    '_dsz_sku': item.SKU,
-    '_cost': cost.toFixed(2),
-    '_shipping': shippingCost.toFixed(2),
-    '_profit': profitEst,
-    '_margin': marginPct + '%'
+    'Description': htmlDesc
   };
 
   ebayRows.push(ebayRow);
-  console.log(`[#${index+1}] ${item.SKU} | Cat: ${categoryId} | Title: ${finalTitle} (${finalTitle.length}ch) | Sell: $${finalPriceStr} | Profit: $${profitEst} (${marginPct}%)`);
+  console.log(`[#${index + 1}] ${item.SKU} | Cat: ${categoryId} | Title: ${finalTitle} (${finalTitle.length}ch) | Sell: $${finalPriceStr} | Profit: $${profitEst} (${marginPct}%)`);
 });
 
 // 4. Output CSV Generation
