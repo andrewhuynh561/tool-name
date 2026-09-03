@@ -1,0 +1,15 @@
+# Pipeline run snapshots and temporary data feeds
+pipeline/General_*.csv
+pipeline/snapshots/
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+
+# Operating System & IDE
+Thumbs.db
+.DS_Store
+*.tmp
