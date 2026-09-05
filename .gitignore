@@ -1,5 +1,6 @@
 # Pipeline run snapshots and temporary data feeds
-pipeline/General_*.csv
+*.csv
+*.tsv
 pipeline/snapshots/
 
 # Python & Environment
