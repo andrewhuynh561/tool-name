@@ -172,7 +172,45 @@ def main():
         'watch band':            '182068',
         'watch strap':           '182068',
         'wristband':             '182068',
-        'pickleball':            '184357',
+        # ─── Fishing & Marine ─────────────────────────────────────────────────
+        'tackle box':            '179998',
+        'tackle storage':        '179998',
+        'tackleboxes':           '179998',
+        'tackle':                '179998',
+        'lure':                  '179995',
+        'bait':                  '179995',
+        'fishing':               '14104',
+        'fish scaler':           '20632',
+        'fish scale':            '20632',
+        'aquarium':              '20755',
+        'fish tank':             '20755',
+        'boating':               '26443',
+        'boat':                  '26443',
+        'marine':                '26443',
+        'yacht':                 '26443',
+        'canoe':                 '26443',
+        'paddle':                '26443',
+        'diving':                '1300',
+        'snorkel':               '1300',
+
+        # ─── Sports & Trampoline ──────────────────────────────────────────────
+        'trampoline':            '140974',
+        'tennis':                '159139',
+        'racquet':               '159139',
+        'water bladder':         '181382',
+        'golf':                  '18933',
+        'tent':                  '36118',
+        'canopy':                '36118',
+        'sun shelter':           '36118',
+        'sleeping pad':          '181378',
+        'sleeping mat':          '181378',
+        'air mattress':          '181378',
+        'cooler pad':            '177074',
+        'coin collection':       '11116',
+        'coin holder':           '11116',
+        'rebounder net':         '158928',
+        'patch':                 '3118',
+        'repair tape':           '3118',
 
         # ─── Pet Supplies ────────────────────────────────────────────────────
         'silvervine':            '177789',
@@ -523,6 +561,28 @@ def main():
                      f"g_{gravity},x_{x},y_{y},o_{opacity},fl_relative")
         return f"https://res.cloudinary.com/{cloud}/image/fetch/{transform}/{image_url}"
 
+    # ── Title Formatting Helper (Word-boundary safe, 80 chars max) ───────────
+    def format_title(raw_t, is_s2):
+        tc = re.sub(r'^[A-Z0-9]{2,}-[A-Z0-9-]+\s+', '', raw_t, flags=re.I).strip()
+        tc = re.sub(r'\s+', ' ', tc)
+        if is_s2:
+            tc = re.sub(r'^(?:Landhoow|Weisshorn|Everfit|Alritz|JIALWEN|TAMOSH)\s*[:\-]?\s*', '', tc, flags=re.I).strip()
+            tc = re.sub(r'\b(?:AU Stock|AU Fast Post)\b', '', tc, flags=re.I).strip()
+            tc = re.sub(r'\s+', ' ', tc)
+            sfx = ' AU Fast Post'
+        else:
+            tc = re.sub(r'\b(?:AU Stock|AU Fast Post)\b', '', tc, flags=re.I).strip()
+            tc = re.sub(r'\s+', ' ', tc)
+            sfx = ' AU Stock'
+
+        if len(tc) + len(sfx) <= 80:
+            return tc + sfx
+        else:
+            max_len = 80 - len(sfx)
+            truncated = tc[:max_len]
+            last_space = truncated.rfind(' ')
+            return (truncated[:last_space] if last_space > 30 else truncated) + sfx
+
     # ── Prohibited Items Filter ───────────────────────────────────────────────
     PROHIBITED_KEYWORDS = [
         'medical device', 'fda', 'therapeutic', 'clinical', 'prescription',
@@ -582,25 +642,14 @@ def main():
         # ignoring shipping restriction tables and standard disclaimers
         full_text_lower = f"{raw_title} {raw_desc} {cat} {subcat}".lower()
         clean_text_check = re.sub(r'<details>.*?</details>', '', full_text_lower, flags=re.S)
-        clean_text_check = re.sub(r'not (?:intended for|a) (?:medical|therapeutic)[^.]*', '', clean_text_check)
+        clean_text_check = re.sub(r'not (?:intended for|designed for|a) (?:medical|therapeutic)[^.]*', '', clean_text_check)
+        clean_text_check = re.sub(r'leisure accessory only[^.]*', '', clean_text_check)
         if any(re.search(r'\b' + re.escape(pk) + r'\b', clean_text_check) for pk in PROHIBITED_KEYWORDS):
             prohibited_count += 1
             continue
 
         # Title cleanup & 80-char Cassini format
-        title_clean = re.sub(r'^[A-Z0-9]{2,}-[A-Z0-9-]+\s+', '', raw_title, flags=re.I).strip()
-        title_clean = re.sub(r'\s+', ' ', title_clean)
-        if 'AU Stock' not in title_clean:
-            suffix = ' AU Stock'
-            if len(title_clean + suffix) <= 80:
-                final_title = title_clean + suffix
-            else:
-                max_len = 80 - len(suffix)
-                truncated = title_clean[:max_len]
-                last_space = truncated.rfind(' ')
-                final_title = (truncated[:last_space] if last_space > 30 else truncated) + suffix
-        else:
-            final_title = title_clean[:80]
+        final_title = format_title(raw_title, is_store2)
 
         # Pricing: RRP + $5.00 formula
         cost = float(re.sub(r'[^0-9.]', '', cost_raw) or '0')
@@ -817,29 +866,69 @@ def main():
     # ── Save Outputs ──────────────────────────────────────────────────────────
     if is_store2:
         output_path_workspace = "c:/Users/andre/Ebay/pipeline/output_ebay_upload_store2.csv"
-        output_path_downloads = f"C:/Users/andre/Downloads/output_ebay_upload_store2_{feed_key}.csv"
+        output_path_downloads = f"C:/Users/andre/Downloads/output_ebay_upload_store2_{feed_key}_new_batch.csv"
         output_path_root = "c:/Users/andre/Ebay/output_ebay_upload_store2.csv"
+        output_path_downloads_all = f"C:/Users/andre/Downloads/output_ebay_upload_store2_all.csv"
     else:
         output_path_workspace = "c:/Users/andre/Ebay/pipeline/output_ebay_upload.csv"
         output_path_downloads = f"C:/Users/andre/Downloads/output_ebay_upload_{feed_key}.csv"
         output_path_root = "c:/Users/andre/Ebay/output_ebay_upload.csv"
+        output_path_downloads_all = None
 
-    out_paths = [output_path_workspace, output_path_downloads, output_path_root]
+    if ebay_rows or (is_store2 and os.path.exists(output_path_root)):
+        combined_rows = []
+        seen_skus_in_out = set()
+        if is_store2 and os.path.exists(output_path_root):
+            with open(output_path_root, mode="r", encoding="utf-8-sig", errors="ignore") as rf:
+                r_reader = csv.DictReader(rf)
+                for row in r_reader:
+                    cl = row.get('CustomLabel', '').strip()
+                    if cl and cl not in seen_skus_in_out:
+                        seen_skus_in_out.add(cl)
+                        # Ensure existing Store 2 titles end in AU Fast Post rather than AU Stock
+                        row['*Title'] = format_title(row.get('*Title', ''), is_store2)
+                        combined_rows.append(row)
+            
+            for er in ebay_rows:
+                cl = er.get('CustomLabel', '').strip()
+                if cl and cl not in seen_skus_in_out:
+                    seen_skus_in_out.add(cl)
+                    combined_rows.append(er)
+        else:
+            combined_rows = list(ebay_rows)
 
-    if ebay_rows:
-        headers = list(ebay_rows[0].keys())
-        for out_path in out_paths:
+        headers = list(combined_rows[0].keys())
+        
+        # Write merged master catalog
+        for out_path in [output_path_workspace, output_path_root]:
             with open(out_path, mode="w", encoding="utf-8-sig", newline="") as wf:
+                writer = csv.DictWriter(wf, fieldnames=headers, extrasaction='ignore')
+                writer.writeheader()
+                writer.writerows(combined_rows)
+        
+        if output_path_downloads_all:
+            with open(output_path_downloads_all, mode="w", encoding="utf-8-sig", newline="") as wf:
+                writer = csv.DictWriter(wf, fieldnames=headers, extrasaction='ignore')
+                writer.writeheader()
+                writer.writerows(combined_rows)
+
+        # Also write the newly processed batch file separately for clean upload
+        if ebay_rows:
+            with open(output_path_downloads, mode="w", encoding="utf-8-sig", newline="") as wf:
                 writer = csv.DictWriter(wf, fieldnames=headers, extrasaction='ignore')
                 writer.writeheader()
                 writer.writerows(ebay_rows)
 
     print("\n=======================================================")
-    print(f"✅ Successfully Processed {len(ebay_rows)} Winning Dropshipzone Products for {store_name}!")
+    print(f"✅ Successfully Processed {len(ebay_rows)} New Winning Dropshipzone Products for {store_name}!")
+    if is_store2:
+        print(f"📊 Total Combined Listings in Store 2 Master Catalog: {len(combined_rows)} listings.")
     print(f"⏭️ Skipped {skipped_count} products (already active on eBay).")
     print(f"🚫 Filtered {prohibited_count} prohibited/restricted products.")
     print(f"📁 Workspace Output: {output_path_workspace}")
-    print(f"📁 Downloads Output: {output_path_downloads}")
+    if is_store2 and output_path_downloads_all:
+        print(f"📁 Downloads Full Catalog: {output_path_downloads_all}")
+    print(f"📁 Downloads New Batch Output: {output_path_downloads}")
     print(f"📁 Root Output: {output_path_root}")
     print("=======================================================\n")
 
