@@ -1,7 +1,7 @@
-﻿# NDIS Assistive & Sensory eBay AU Dropship Research
+# NDIS, Aged Care (HCP) & High-Margin Non-Tech AU Dropship Master Playbook
 > **Date**: September 2026
-> **Supplier**: Dropshipzone (DSZ)
-> **Platform Focus**: eBay Australia + Shopify NDIS Store
+> **Suppliers**: Dropshipzone (DSZ), Dshop, Domestic B2B Wholesalers
+> **Platform Focus**: eBay Australia + Shopify NDIS/HCP/Commercial Webstores
 
 ---
 
@@ -19,8 +19,13 @@
 10. [EFT Payment Timeline, Geo-Targeting & Ad Scheduling](#10-eft-payment-timeline-geo-targeting--ad-scheduling)
 11. [Competitor Analysis — Who Are the Real Players?](#11-competitor-analysis--who-are-the-real-players)
 12. [Full Competitor Store Directory](#12-full-competitor-store-directory)
-13. [Launch Checklist](#launch-checklist)
-14. [Key Resources](#key-resources)
+13. [Home Care Packages (HCP) & Aged Care Living Deep Dive](#13-home-care-packages-hcp--aged-care-living-deep-dive)
+14. [Commercial B2B Fitouts — Salon, Barber & Tattoo Studios](#14-commercial-b2b-fitouts--salon-barber--tattoo-studios)
+15. [WHS / Site Safety & Regulatory Tradie Compliance](#15-whs--site-safety--regulatory-tradie-compliance)
+16. [Professional Pet Grooming & Equine/Hobby Farm Equipment](#16-professional-pet-grooming--equinehobby-farm-equipment)
+17. [Cross-Niche Comparative Economics & Blueprint](#17-cross-niche-comparative-economics--blueprint)
+18. [Unified Launch Checklist](#18-unified-launch-checklist)
+19. [Key Resources](#19-key-resources)
 
 ---
 
@@ -31,8 +36,8 @@
 |--------|------|--------|
 | eBay Global User Share | ~60-62% | ~38-40% |
 | eBay Australia User Share | **~65-75%** | **~25-35%** |
-| Weekly AU Online Spend | ** AUD/week** |  AUD/week |
-| Average Order Value (AOV) | **- AUD** | - AUD |
+| Weekly AU Online Spend | **$120–$160 AUD/week** | $85–$110 AUD/week |
+| Average Order Value (AOV) | **$85–$140 AUD** | $45–$75 AUD |
 
 ### Buyer Behaviour by Gender
 - **Men**: Goal-oriented, mission-driven. Search for specific auto parts, tools, electronics. Low price sensitivity for urgent replacements.
@@ -47,36 +52,36 @@
 
 ## 2. Women's Fashion on eBay — Is It Viable?
 
-### The Sub- Trap (Earrings / Cheap Jewellery) — NOT VIABLE
+### The Sub-$20 Trap (Earrings / Cheap Jewellery) — NOT VIABLE
 
-**Unit Economics Example (Earrings at .99 AUD):**
+**Unit Economics Example (Earrings at $12.99 AUD):**
 
-| | |
-|--|--|
-| Selling Price (eBay AU, Free Shipping) | .99 AUD |
-| DSZ Wholesale Item | -.50 AUD |
-| DSZ Tracked Shipping | -.50 AUD |
-| eBay FVF (13.4% + .30) | -.44 AUD |
-| GST on eBay Fees | -.24 AUD |
-| Promoted Listings Standard 4% | -.64 AUD |
-| **NET PROFIT** | **-.33 AUD (LOSS)** |
+| Line Item | Amount |
+|---|---|
+| Selling Price (eBay AU, Free Shipping) | $12.99 AUD |
+| DSZ Wholesale Item | -$3.50 AUD |
+| DSZ Tracked Shipping | -$7.50 AUD |
+| eBay FVF (13.4% + $0.30) | -$2.04 AUD |
+| GST on eBay Fees | -$0.20 AUD |
+| Promoted Listings Standard 4% | -$0.52 AUD |
+| **NET PROFIT** | **-$0.77 AUD (LOSS)** |
 
-> **Why**: Dropshipzone ships via tracked parcel (- AUD). You cannot compete with Chinese sellers using .50 untracked stamps.
+> **Why**: Dropshipzone ships via tracked parcel ($6–$9 AUD). You cannot compete with Chinese sellers using $0.50 untracked stamps.
 
-### The Sweet Spot: - AUD Functional Accessories — VIABLE
+### The Sweet Spot: $40–$120 AUD Functional Accessories — VIABLE
 
-**Unit Economics Example (Jewellery Cabinet at .95 AUD):**
+**Unit Economics Example (Jewellery Cabinet at $89.95 AUD):**
 
-| | |
-|--|--|
-| Selling Price (eBay AU, Free Shipping) | .95 AUD |
-| DSZ Wholesale + Shipping | -.50 AUD |
-| eBay FVF (13.4% + .30) | -.34 AUD |
-| GST on eBay Fees | -.03 AUD |
-| PLS at 4% | -.00 AUD |
-| **NET PROFIT** | **+.08 AUD (28.12%)** |
+| Line Item | Amount |
+|---|---|
+| Selling Price (eBay AU, Free Shipping) | $89.95 AUD |
+| DSZ Wholesale + Shipping | -$42.50 AUD |
+| eBay FVF (13.4% + $0.30) | -$12.35 AUD |
+| GST on eBay Fees | -$1.24 AUD |
+| PLS at 4% | -$3.60 AUD |
+| **NET PROFIT** | **+$30.26 AUD (33.6%)** |
 
-### Recommended Women's Product Categories (Dropshipzone, - AUD)
+### Recommended Women's Product Categories (Dropshipzone, $40–$120 AUD)
 
 | Category | Product Examples | Return Risk |
 |----------|-----------------|-------------|
@@ -97,39 +102,26 @@ Search eBay AU with Item Location: Australia Only, shipping from these suburbs =
 #### Dropshipzone In-House Brands
 | Brand | Categories |
 |-------|-----------|
-| **Artiss** | Jewellery cabinets, mirror armoires, vanity tables, shoe storage |
-| **Devanti** | Towel warmers, ultrasonic cleaners, mini bar fridges, steamers |
+| **Artiss** | Jewellery cabinets, mirror armoires, vanity tables, shoe storage, salon chairs |
+| **Devanti** | Towel warmers, ultrasonic cleaners, mini bar fridges, steamers, commercial ice makers |
 | **Giselle Bedding** | Pregnancy pillows, memory foam pillows, mattress toppers |
-| **Cefito** | LED bathroom mirrors, vanity sinks |
-| **i.Pet / Pawever** | Pet carriers, dog car seat covers |
+| **Cefito** | LED bathroom mirrors, stainless kitchen/utility sinks, grab rails |
+| **i.Pet / Pawever** | Pet grooming tables, dryers, orthopedic dog beds, dog car ramps |
 
 ### Method 2: Terapeak (eBay Seller Hub Research)
 
 Filters to use:
 - Marketplace: eBay Australia
 - Date Range: Last 30 Days
-- Price Range: - AUD
+- Price Range: $40–$250 AUD
 - Item Location: Australia Only
 - Format: Fixed Price (BIN)
 - Free Postage: Yes
 
 Key Metrics:
 - Sell-Through Rate (STR) > 50%
-- Average Sold Price (ASP) >  AUD
+- Average Sold Price (ASP) > $65 AUD
 - Top 3 competitor listings: 15-30 units sold/30 days
-
-### Method 3: Native DSZ Portal Signals
-- Sort catalog by "Best Selling" or "Hot Products"
-- Focus on wholesale price - AUD
-- Monitor stock levels over 5 days — drop of 40-80 units = proven demand
-- Watch for Weekly Markdown Promotions (10-20% wholesale discount)
-
-### 5-Point Validation Checklist
-- [ ] Retail price at - AUD with >25% net margin?
-- [ ] Supplier has at least 30-50 units in stock?
-- [ ] Package under 15kg?
-- [ ] Non-sized and non-breakable?
-- [ ] Supplier offers 1-2 business day dispatch from VIC/NSW?
 
 ---
 
@@ -139,67 +131,37 @@ Key Metrics:
 DSZ-V... (e.g., DSZ-V445-C450170) is Dropshipzone's internal MPN embedded in eBay item specifics by automated listing software.
 
 ### Method 1: eBay Advanced Search
-1. Go to ebay.com.au/sch/ebayadvsearch
-2. Keywords: "DSZ-V" (with quotes)
+1. Go to `ebay.com.au/sch/ebayadvsearch`
+2. Keywords: `"DSZ-V"` (with quotes)
 3. Check "Title and description"
 4. Location: Australia Only
 5. Show: Sold Items
 
-### Method 2: Google Dorking
-- site:ebay.com.au "DSZ-V" "Item location"
-- site:ebay.com.au intext:"DSZ-" "Truganina"
-- site:ebay.com.au "MPN: DSZ-V" "Free postage"
-
 ### Other DSZ SKU Prefixes
 | Prefix | Brand / Category |
 |--------|-----------------|
-| DSZ-V... | VidaXL / Partner catalog |
-| FURNI-... | Artiss Storage |
-| BA-... | Cefito / Devanti Bath & Beauty |
-| MAT-... | Giselle Bedding |
-| FIT-... | Everfit Fitness |
-| PET-... | i.Pet / Pawever |
-
-### Competitor Store Goldmine Play
-1. Find listing with DSZ-V MPN
-2. Click seller username — "See all items"
-3. Filter by "Sold Items" on their store page
-4. Entire DSZ catalog + real sold prices revealed
+| `DSZ-V...` | VidaXL / Partner catalog |
+| `FURNI-...` | Artiss Storage / Salon Furniture |
+| `BA-...` | Cefito / Devanti Bath, Beauty & Safety |
+| `MAT-...` | Giselle Bedding & Orthopedic Foam |
+| `FIT-...` | Everfit Fitness & Physical Rehab |
+| `PET-...` | i.Pet / Grooming & Animal Mobility |
 
 ---
 
 ## 5. Business Models Leveraging Dropshipzone Free Postage
 
 ### Model 1: eBay AU Fast & Free Marketplace Store
-- Target: - AUD items
-- Ad Rate: PLS at 3-4.5%
+- Target: $50–$180 AUD items
+- Ad Rate: PLS at 3–4.5%
 - Enable Multi-Buy (Buy 2 Save 5%, Buy 3 Save 10%)
 - Cassini boost from "Free Standard Postage" badge
 
 ### Model 2: Branded Niche DTC Store (Shopify)
-- Build a branded store (e.g., "Modern Vanity & Home Spa")
-- 25-35 curated DSZ products
-- Same item can retail for - vs  on eBay
-- Gross Margin: 40-60%
-
-### Model 3: Omnichannel (eBay + Amazon AU + Catch + Kogan + MyDeal)
-- Tools: AutoDS, Omnivore, Sellbrite
-- 5x sales surface area from same supplier
-
-### Model 4: High-Ticket Furniture (- AUD)
-
-| Metric | Earrings (.99) | Artiss Dressing Table () |
-|--------|------------------|------------------------------|
-| Wholesale + Free Post | .00 | .00 |
-| eBay Fees | .84 | .26 |
-| Ads 4% | .76 | .96 |
-| **NET PROFIT** | **.39** | **.78** |
-| Sales for /day | 32 sales | 5 sales |
-
-### Model 5: Facebook Marketplace Delivery Arbitrage
-- List DSZ items on Facebook Marketplace
-- 0% eBay fees = extra 13-15% margin kept
-- Collect PayID/Bank Transfer, fulfill on DSZ
+- Build a branded store (e.g., "Modern Assistive Living" or "ProStudio Supplies")
+- 25–35 curated domestic products
+- Same item can retail for 25%–40% higher than on eBay
+- Gross Margin: 40%–60%
 
 ---
 
@@ -207,33 +169,19 @@ DSZ-V... (e.g., DSZ-V445-C450170) is Dropshipzone's internal MPN embedded in eBa
 
 ### 6A: Airbnb Staging Packages (B2B)
 - Target: 150,000+ Australian Airbnb hosts
-- AOV: -,500 AUD per package order
+- AOV: $800–$2,500 AUD per package order
 - Channel: Airbnb Host Facebook Groups, property investor forums
-- Net Profit: -+ per order
+- Net Profit: $250–$750+ per order
 
-### 6B: NDIS Assistive & Ergonomic Store (see Section 7)
+### 6B: NDIS Assistive & Ergonomic Store (Section 7)
 
-### 6C: Digital + Physical Bundle Funnel
-- Product: "30-Day Anti-Aging Spa Masterclass" PDF + LED Face Mask
-- Price:  AUD | DSZ mask:  | Ad CPA:  | Net Profit: /order
+### 6C: Home Care Packages (HCP) & Aged Care Living (Section 13)
 
-### 6D: TikTok Organic UGC Engine
-1. Order 1 DSZ sample ( AUD)
-2. Film 5 short "problem-solver" hook videos
-3. Link to 1-page checkout (.99, free shipping)
-4. 50K views = 20-50 orders = -,200 net profit at  ad spend
+### 6D: Commercial Salon & Tattoo Studio Fitouts (Section 14)
 
-### 6E: B2B Commercial Broker
-- Target: Hair salons, gyms, tattoo parlours, boutique hotels
-- Products: Hydraulic chairs, UV sterilizers, dumbbell racks
-- Channel: Gumtree Commercial, LinkedIn, Facebook Marketplace
-- Payment: Collect via bank transfer before ordering DSZ
+### 6E: WHS / Site Safety & Tradie Regulatory Compliance (Section 15)
 
-### 6F: OzBargain / Facebook Deals Community
-- Build Facebook Page ("Aussie Home Hacks & Daily Deals")
-- Post DSZ Weekly Markdowns as flash deals
-- Drive to eBay listings or Shopify store
-- Zero ad spend, community-driven sales velocity
+### 6F: Professional Pet Grooming & Equine/Hobby Farm Equipment (Section 16)
 
 ---
 
@@ -248,39 +196,29 @@ DSZ-V... (e.g., DSZ-V445-C450170) is Dropshipzone's internal MPN embedded in eBa
 | Self-Managed | 26% (~201,000) |
 | Agency-Managed | 6% (~47,000) |
 | % who can buy from any unregistered business | **94%** |
-| Annual Low-Cost AT / Consumables spend | >.8 Billion AUD |
+| Annual Low-Cost AT / Consumables spend | >$1.8 Billion AUD |
 
 ### Key Regulatory Advantage
-- Products under ,500 AUD = Low-Cost AT = No NDIA prior approval needed
-- You do NOT need to be an NDIS-Registered Provider
-- You just need: ABN + compliant GST tax invoice with participant NDIS number
+- Products under $1,500 AUD = Low-Cost AT = No NDIA prior approval needed.
+- You do NOT need to be an NDIS-Registered Provider.
+- You just need: ABN + compliant GST tax invoice with participant NDIS number.
 
 ### Focus Catalog from Dropshipzone
 
 | Category | Examples | Retail Range | NDIS Claim |
 |----------|---------|--------------|-----------|
-| Sensory & Neurodivergent | LED Bubble Tubes, Weighted Blankets, Acupressure Mats | - | Low-Cost AT / Consumables |
-| Mobility & Daily Living | Rubber Ramps, Shower Stools, Bed Rails | - | Personal Care & Mobility |
-| Ergonomics & Posture | Sit-Stand Desks, Kneeling Chairs, Anti-Fatigue Mats | - | AT for Employment/Study |
-| Recovery & Pain Relief | Heated Lift Chairs, Foot Massagers, Cervical Pillows | - | Health & Wellbeing |
+| Sensory & Neurodivergent | LED Bubble Tubes, Weighted Blankets, Acupressure Mats | $69–$229 | Low-Cost AT / Consumables |
+| Mobility & Daily Living | Rubber Ramps, Shower Stools, Bed Rails, Overbed Tables | $59–$199 | Personal Care & Mobility |
+| Ergonomics & Posture | Sit-Stand Desks, Kneeling Chairs, Anti-Fatigue Mats | $149–$449 | AT for Employment/Study |
+| Recovery & Pain Relief | Heated Lift Chairs, Foot Massagers, Cervical Pillows | $89–$999 | Health & Wellbeing |
 
 ### Checkout Flow
-1. Customer selects product
-2. At checkout, chooses: "Pay Now" (self-managed) OR "Invoice My Plan Manager" (plan-managed)
-3. If Plan Manager invoice: customer enters Participant Name, NDIS Number, Plan Manager Email
-4. Sufio app auto-generates compliant PDF invoice and emails plan manager
-5. You receive EFT payment (3-5 business days)
-6. You fulfill on Dropshipzone
-
-### Required Invoice Fields
-- Your ABN and Registered Business Name
-- Participant Full Name and NDIS Number
-- Clear Product Description
-- Line Item Price + GST Breakdown
-- Your BSB & Account Number
-
-### Shopify Apps Required
-- Sufio or Order Printer Pro (automated NDIS PDF invoicing)
+1. Customer selects product.
+2. At checkout, chooses: "Pay Now" (self-managed) OR "Invoice My Plan Manager" (plan-managed).
+3. If Plan Manager invoice: customer enters Participant Name, NDIS Number, Plan Manager Email.
+4. Sufio app auto-generates compliant PDF invoice and emails plan manager.
+5. You receive EFT payment (3-5 business days).
+6. You fulfill on Dropshipzone.
 
 ---
 
@@ -290,86 +228,25 @@ DSZ-V... (e.g., DSZ-V445-C450170) is Dropshipzone's internal MPN embedded in eBa
 
 | Keyword | Est. Monthly AU Searches | Intent |
 |---------|--------------------------|--------|
-| "NDIS Consumables" / "Low Cost AT" | 8,000-14,000 | Very High |
-| "Sensory Toys" / "Sensory Tools Australia" | 18,000-25,000 | Very High |
-| "Weighted Blanket Australia / NDIS" | 12,000-18,000 | Very High |
-| "Shower Chair / Bath Transfer Bench" | 6,500-9,000 | High |
-| "Sensory Bubble Lamp / Tube" | 3,500-5,500 | High |
-| "Electric Sit Stand Desk Frame" | 9,000-15,000 | Moderate-High |
-
-### Market Share Estimate
-
-| Segment | Est. Share |
-|---------|-----------|
-| Aidacare / ILS / Independence Australia | ~12% |
-| Sensory niche stores combined | ~15% |
-| Amazon / eBay / Kmart (non-NDIS-compliant) | ~28% |
-| Pharmacy chains | ~10% |
-| Fragmented long tail (YOUR TARGET) | **~35%** |
-
-Total Low-Cost AT & Sensory Retail Market: ~ AUD/year
-
-### The 3 Gaps No Competitor Has Solved
-
-| Gap | Current Reality | Your Advantage |
-|-----|----------------|---------------|
-| Free Nationwide Freight | Most charge - on bulky items | 100% Free AU Delivery via DSZ |
-| Automated PM Invoicing | Manual phone/email required | Instant PDF auto-emailed at checkout |
-| - Functional Lifestyle Range | - toys OR + clinical gear | You own the middle ground |
-
-### 14-Day Validation Launch
-1. Shopify store (~ AUD promo plan)
-2. 25 high-utility DSZ products
-3. Sufio installed for NDIS-compliant invoicing
-4. Google Shopping PMax at /day
-5. After 14 days (~ spend) = live conversion data
-
-### Marketing Channels Ranked
-
-| Channel | Ranking | Why |
-|---------|---------|-----|
-| Google Search / Shopping (PMax) | #1 BEST | Disability purchases are problem-driven Google searches |
-| Facebook Community Groups | #2 |  cost, highest trust, word-of-mouth driven |
-| LinkedIn Outreach to Support Coordinators | #3 | One SC = 20-40 participants |
-| Plan Manager Provider Directories | #4 | Passive referral stream |
+| "NDIS Consumables" / "Low Cost AT" | 8,000–14,000 | Very High |
+| "Sensory Toys" / "Sensory Tools Australia" | 18,000–25,000 | Very High |
+| "Weighted Blanket Australia / NDIS" | 12,000–18,000 | Very High |
+| "Shower Chair / Bath Transfer Bench" | 6,500–9,000 | High |
+| "Sensory Bubble Lamp / Tube" | 3,500–5,500 | High |
+| "Electric Sit Stand Desk Frame" | 9,000–15,000 | Moderate-High |
 
 ---
 
 ## 9. Returns, Warranties & Customer Support
 
 ### DSZ Warranty Policy
-- 12-month manufacturer warranty on all products
-- Governed by Australian Consumer Law (ACL)
-- Exclusions: Normal wear, improper assembly, abnormal use
-
-### Faulty / Transit Damage Claim Process
-1. Request customer photo/video evidence
-2. Open DSZ portal: My Account > Orders > Request Support
-3. Upload evidence
-4. DSZ resolves in 24-48 hours via replacement part, new unit, or credit
+- 12-month manufacturer warranty on all products.
+- Governed by Australian Consumer Law (ACL).
+- Exclusions: Normal wear, improper assembly, abnormal use.
 
 ### Store Policy (Change of Mind)
 ACL does NOT require accepting change-of-mind returns. Recommended policy:
-> "Due to health, hygiene, and therapeutic standards, we do not accept change-of-mind returns on personal care, sensory, or mobility equipment once dispatched. All items backed by 12-Month Australian Warranty."
-
-### NDIS Financial Handling
-
-| Customer Type | Payment | Refund Process |
-|--------------|---------|---------------|
-| Self-Managed | Credit Card / PayID | Standard Shopify refund (2-4 days) |
-| Plan-Managed | EFT from Plan Manager | Issue Credit Note PDF; bank transfer to PM trust account |
-
-### Support Setup
-- Email only: support@yourdomain.com.au
-- Hours: Mon-Fri 9am-5pm AEST
-- Target response: <4 business hours
-
-#### Pre-Written Templates
-**Tracking Query:** "Hi [Name], your order dispatched from Melbourne. Tracking: [Number] — [Link]. Allow 2-5 business days."
-
-**Plan Manager Invoice:** "Hi [Name], Invoice #[1234] sent to your plan manager at [email]. Order dispatches once EFT clears (3-5 business days)."
-
-**Faulty Item:** "Hi [Name], sorry to hear this. 12-month warranty applies. Please reply with 1-2 photos of the issue and we'll arrange an immediate replacement."
+> *"Due to health, hygiene, and therapeutic standards, we do not accept change-of-mind returns on personal care, sensory, or mobility equipment once dispatched. All items are backed by a 12-Month Australian Warranty."*
 
 ---
 
@@ -380,188 +257,173 @@ ACL does NOT require accepting change-of-mind returns. Recommended policy:
 | Day | Action |
 |-----|--------|
 | Day 0 | Customer orders. PDF invoice auto-emailed to Plan Manager |
-| Day 1-2 | Plan Manager verifies budget, submits NDIA claim |
-| Day 2-3 | NDIA releases funds to PM trust account |
-| Day 3-5 | PM weekly EFT pay run lands in your bank |
-| Day 5 | YOU fulfill on Dropshipzone |
+| Day 1–2 | Plan Manager verifies budget, submits NDIA claim |
+| Day 2–3 | NDIA releases funds to PM trust account |
+| Day 3–5 | PM weekly EFT pay run lands in your bank |
+| Day 5 | **YOU fulfill on Dropshipzone** |
 
-- Fast Plan Managers (Plan Partners, MyIntegra, Maple Plan): 3-5 business days
-- Smaller Plan Managers: 5-8 business days
-- **RULE: Only fulfill AFTER EFT clears in your bank**
-
-### NDIS Participants by State
-
-| State | % | Approx. Count |
-|-------|--|--------------|
-| NSW | ~31% | ~242,000 |
-| VIC | ~27% | ~211,000 |
-| QLD | ~22% | ~172,000 |
-| WA | ~9% | ~70,000 |
-| SA | ~7% | ~55,000 |
-| TAS / ACT / NT | ~4% | ~32,000 |
-
-NSW + VIC = 58% of Australia's NDIS market. DSZ ships from Melbourne/Sydney = 2-3 day delivery.
-
-**Top Metro Sub-Regions:**
-- NSW: Western Sydney (Penrith, Blacktown, Liverpool, Campbelltown)
-- VIC: Outer Melbourne (Werribee, Melton, Dandenong, Frankston, Craigieburn)
-- QLD: South-East QLD (Logan, Ipswich, Moreton Bay, Gold Coast)
-
-### Buyer Personas
-
-| Persona | Share | Profile |
-|---------|-------|---------|
-| Mothers & Female Carers | ~70% | Age 28-54, neurodivergent children, browse at night |
-| Independent Adults | ~20% | Physical/Sensory disability, high-intent Google search |
-| Support Coordinators / OTs | ~10% | B2B influencers managing 20-40 participants |
-
-### Meta Ad Targeting
-- Demographics: Women, Age 28-54, NSW/VIC/QLD
-- Interests: Autism awareness, Occupational therapy, Special education, Sensory processing, Carer support
-
-### Ad Video Framework
-- 0:00-0:03 HOOK: "Did you know you can claim this under your NDIS Core Consumables?"
-- 0:04-0:10 DEMO: Show product in a calm home setting
-- 0:11-0:18 TRUST: Show checkout with "Invoice My Plan Manager" option
-- 0:19-0:25 CTA: "Free 2-4 day AU dispatch. Click below."
-
-### Google Shopping Title Formula
-[Product Name] [Therapy/Sensory Benefit] - NDIS Invoice Friendly - Free Fast AU Delivery
-
-### Annual Spending Peaks
-
-| Period | Driver | Best Products |
-|--------|--------|--------------|
-| **May-June (EOFY)** | "Use it or lose it" budget rush | High-ticket packages (- AOV) |
-| **January-February** | Back-to-School reset | Sensory tools, weighted lap pads |
-| **November-December** | Pre-holiday spend | Bubble lamps, weighted blankets |
-
-### Best Daily Ad Schedule
-- Days: Monday-Thursday (plan managers work business days)
-- Peak Hours:
-  - 8:30 PM - 11:30 PM AEST (mothers after kids' bedtime) = HIGHEST ENGAGEMENT
-  - 10:00 AM - 1:30 PM AEST (mid-morning while kids at school/therapy)
+* **RULE: Only fulfill AFTER EFT clears in your bank account.**
 
 ---
 
 ## 11. Competitor Analysis — Who Are the Real Players?
 
-### How Plan Managers Buy
-> "I need a valid ABN, a clean compliant GST invoice, a clear product description, and fast dispatch. I am not shopping for the lowest price — I am shopping for the least friction."
-
 Plan Managers buy from:
-1. Established registered providers (Aidacare, ILS, Independence Australia)
+1. Established registered providers (*Aidacare, ILS, Independence Australia*)
 2. Any commercial store that auto-sends an itemised PDF invoice to their email
 3. Stores listed in their approved provider directories
 
-### How Parents / Carers Buy
-Buying journey:
-1. OT/Therapist Recommendation
-2. Google Search ("weighted blanket NDIS invoice") OR Facebook Group Ask
-3. Visit 2-3 websites: check trust, NDIS mention, free/fast shipping
-4. Purchase (self-pay + claim OR request plan manager invoice)
+> *"I need a valid ABN, a clean compliant GST invoice, a clear product description, and fast dispatch. I am not shopping for the lowest price — I am shopping for the least friction."*
 
 ---
 
 ## 12. Full Competitor Store Directory
 
-### Tier 1: Sensory & Therapy Niche (Direct Competitors)
-
-| Store | Website | NDIS Invoice | Free Post | Weakness |
-|-------|---------|:---:|:---:|---------|
-| Sister Sensory | sistersensory.com.au | Yes | Partial | Bubble tubes -. Freight quoted separately. |
-| Sensory Street | sensorystreet.com.au | Yes | No | Manual invoice. No auto PM emailing. |
-| The Therapy Store | thetherapystore.com.au | Yes | Some | Low AOV (-). Education-focused. |
-| Sensory Assist | sensoryassist.com.au | Yes | Limited | Small catalog. Sydney Taren Point only. |
-| OT Warehouse | otwarehouse.com.au | Yes | Varies | B2B clinics, not consumer-direct. |
-| Calming Kids Australia | calmingkids.com.au | Yes | Limited | Kids-only. No adult/ergonomic products. |
-| Neptune Blanket | neptuneblanket.com.au | Yes | Yes | Single product (weighted blankets only). |
-| MyNeuroCalm | myneurocalm.com.au | Yes | Limited | Very small catalog, new store. |
-| Starfish Store | starfishstore.com.au | Yes | Varies | School/clinic focused. |
-| Sensory Oasis for Kids | sensoryoasisforkids.com.au | Yes | No | Children only. |
-| FunAbility | funability.com.au | Yes | No | Sydney-only focus. |
-| LowCostAT | lowcostat.com.au | Yes | N/A | Information site, not a real store. |
-
-### Tier 2: Ergonomic & Mobility (Mid-Ticket - AUD)
-
-| Store | Website | NDIS Invoice | Free Post | Weakness |
-|-------|---------|:---:|:---:|---------|
-| Bad Backs | badbacks.com.au | Yes | No | Manual NDIS contact. Freight quoted. |
-| Ergonomics 101 | ergonomics101.com.au | Yes | No | Manual invoice. Corporate-first UX. |
-| No More Pain Ergonomics | nomorepainergonomics.com.au | Yes | No | Primarily corporate clients. |
-| Mobility & Wellness | mobilityandwellness.com.au | Yes | No | Dated website. Freight quoted. |
-| AusMed Health | ausmedhealth.com.au | Yes | No | Clinical aesthetic. Expensive. |
-| Posture Care Chairs | posturecarechair.com.au | Yes | No | Single category only. |
-| InCare Supports | incaresupports.com.au | Yes | Some | Too generic. No specialist identity. |
-| Disability Shop | disabilityshop.com.au | Yes | No | Overwhelming catalog. 2012-era UI. |
-
-### Your Uncontested Position
-
-A modern, lifestyle-first NDIS store for parents and adults — with 100% free nationwide shipping, automated plan manager invoicing at checkout, and a curated - AUD range of sensory, ergonomic, and daily living essentials.
-
-**What every competitor gets wrong:**
-- Freight is NOT free (especially bulky items)
-- Plan manager invoicing requires manual phone/email
-- Website is clinical, cold, or outdated
-- Either - toys OR + clinical gear — nobody owns the - daily lifestyle gap
-
-### Competitor Recon Next Steps
-1. Visit Sister Sensory and Sensory Street — complete their PM checkout flow, note every friction point
-2. Check Facebook Ads Library (facebook.com/ads/library) for each store name
-3. Google "[store name] review" — read NDIS Facebook group complaints about each store
+### Tier 1: Sensory & Therapy Niche
+- *Sister Sensory* (`sistersensory.com.au`): Bubble tubes $180–$350. Freight quoted separately.
+- *Sensory Street* (`sensorystreet.com.au`): Manual invoice; no auto PM emailing.
+- *The Therapy Store* (`thetherapystore.com.au`): Low AOV ($20–$50). Education-focused.
+- *Neptune Blanket* (`neptuneblanket.com.au`): Single-product focus (weighted blankets only).
 
 ---
 
-## Launch Checklist
+## 13. Home Care Packages (HCP) & Aged Care Living Deep Dive
+*(The Multi-Billion Dollar Government-Funded Senior Market)*
 
-### Phase 1: Foundation (Week 1)
-- [ ] Register Australian ABN at abr.business.gov.au (if not done)
-- [ ] Register com.au domain (e.g., ErgoLiving.com.au or NDISAssist.com.au)
-- [ ] Set up Shopify store on /month promo plan
-- [ ] Install Sufio or Order Printer Pro for NDIS-compliant PDF invoicing
-- [ ] Set up support@yourdomain.com.au business email
+### The Market Opportunity
+* **Government Funding**: The Australian Government funds **Home Care Packages (Levels 1 to 4)** for Australians aged 65+, granting **$10,271 to $59,593 per person per year** to keep elderly citizens living independently at home.
+* **Funding Pool**: Over **320,000+ active recipients**, growing at 8% annually.
+* **Inelastic Demand**: Case managers and children of elderly parents urgently need equipment to prevent falls and hospital admissions.
 
-### Phase 2: Catalog (Week 1-2)
-- [ ] Register on dropshipzone.com.au as a retailer
-- [ ] Curate 25-30 products:
-  - 10x Sensory (weighted blankets, LED bubble items, calming tools)
-  - 8x Mobility & Daily Living (shower stools, bed rails, over-bed tables)
-  - 8x Ergonomics (sit-stand desk frames, anti-fatigue mats, kneeling chairs)
-  - 4x Recovery (foot massagers, heated cushions, cervical pillows)
-- [ ] All items under ,500 (Low-Cost AT threshold)
-- [ ] Check supplier has at least 30 units in stock before listing
+### High-Margin HCP Product Range (Dropshipzone / Dshop)
 
-### Phase 3: Traffic (Week 2-3)
-- [ ] Launch Google Shopping PMax at /day (NSW, VIC, QLD geo-only)
-- [ ] Join 3-5 NDIS/Autism parent Facebook groups, begin organic engagement
-- [ ] Identify 5 Support Coordinators on LinkedIn for outreach
-- [ ] Draft LinkedIn outreach message template for SCs
+| Product Line | DSZ Wholesale (Inc Post) | Target Retail Price | Gross Margin | Target Benefit / Justification |
+| :--- | :---: | :---: | :---: | :--- |
+| **Modular Threshold Rubber Ramps** | $45–$70 | **$149–$229** | **65%–70%** | Wheelchair / walker doorway access |
+| **Electric Lift & Recline Armchairs** | $320–$480 | **$799–$1,199** | **55%–60%** | Fall prevention; independent sit-to-stand |
+| **Overbed & Over-Armchair Mobile Tables** | $35–$55 | **$129–$179** | **68%–72%** | Meals, medication, daily living assistance |
+| **Bedside Safety Transfer Assist Handles** | $28–$42 | **$99–$139** | **65%–70%** | Fall prevention when rising from bed |
+| **Adjustable Shower Stools & Transfer Benches** | $32–$55 | **$109–$159** | **65%–70%** | Bathroom hygiene without slip hazards |
 
-### Phase 4: Validate & Scale (Day 14+)
-- [ ] Review Google PMax performance (CTR, CPC, conversions)
-- [ ] Scale budgets on best-performing SKUs
-- [ ] Launch Meta ads targeting Mothers 28-54 in NSW/VIC/QLD
-- [ ] Submit store to Plan Manager directories (Plan Partners, MyIntegra, Maple Plan)
-- [ ] Set up EOFY campaigns for May-June peak
+### The "Assistive Living Australia" Hybrid Play
+Instead of two separate sites, a single branded storefront (**e.g., AssistiveLiving.com.au**) serves **both**:
+1. **NDIS Participants** (Disability / Sensory / Ergonomics)
+2. **HCP Recipients** (Aged Care / Fall Prevention / Independent Senior Living)
+Both utilize the exact same Sufio automated invoicing flow: checkout provides a toggle for *"Invoice My NDIS Plan Manager"* OR *"Invoice My Home Care Package Provider (e.g. Australian Unity, Bolton Clarke, Anglicare)"*.
 
 ---
 
-## Key Resources
+## 14. Commercial B2B Fitouts — Salon, Barber & Tattoo Studios
+*(Capital Expenditure Fitouts — High AOV & Zero Return Risk)*
 
-| Resource | URL |
-|----------|-----|
-| Dropshipzone Retailer Portal | dropshipzone.com.au |
-| NDIS Participant Data Portal | ndis.gov.au/data-and-insights |
-| NDIS "Would We Fund It" Tool | ndis.gov.au/participants/using-your-funding/would-we-fund-it |
-| eBay AU Advanced Search | ebay.com.au/sch/ebayadvsearch |
-| eBay Terapeak | eBay Seller Hub > Research > Product Research |
-| Facebook Ads Library | facebook.com/ads/library |
-| ABN Registration | abr.business.gov.au |
-| Plan Partners Directory | planpartners.com.au |
-| MyIntegra | myintegra.com.au |
-| Maple Plan | mapleplan.com.au |
+### Why This Model Dominates
+* **No Price Sensitivity**: Sole traders and boutique studio owners buy equipment using their business accounts as an immediate tax-deductible capital expense.
+* **Zero Change-of-Mind Returns**: Commercial B2B equipment is strictly excluded from consumer "change-of-mind" refund rules under ACL.
+* **Huge Basket Sizes**: When launching a studio, owners buy complete 3-to-5 item sets.
+
+### High-Performing Studio Lines (Dropshipzone *Artiss* & *Devanti*)
+
+| Item | DSZ Wholesale | Target Retail | Gross Margin | B2B Bundle Placement |
+| :--- | :---: | :---: | :---: | :--- |
+| **Hydraulic Reclining Beauty / Tattoo Bed** | $160–$250 | **$489–$699** | **64%–67%** | Core treatment center |
+| **LED Half-Moon Dimmable Aesthetic Lamp** | $40–$65 | **$149–$199** | **67%–73%** | Shadow-free lash/tattoo work |
+| **Digital Towel Steamer & UV Cabinet** | $55–$85 | **$179–$249** | **65%–69%** | Sterilization & warm towels |
+| **Multi-Tier Rolling Beauty Trolley** | $35–$55 | **$119–$159** | **65%–70%** | Tool storage & mobility |
+
+### The "Studio Starter Kit" Bundle Play
+* **Bundle Components**: Reclining Bed ($200) + Half-Moon Lamp ($50) + UV Steamer ($65) + Trolley ($45) = **$360 Total Wholesale**.
+* **Package Retail Price**: **$999 AUD Free Delivery**.
+* **Gross Profit**: **$639.00 AUD (64% Net Margin)** on a single automated checkout!
 
 ---
 
-*Document generated: September 2026*
-*Based on: eBay AU Dropshipping and NDIS eCommerce Strategy Research Session*
+## 15. WHS / Site Safety & Regulatory Tradie Compliance
+*(Mandated by SafeWork Australia — Urgent Non-Discretionary Orders)*
+
+### The Regulatory Trigger
+* Australian commercial businesses, builders, factories, and warehouses are subject to surprise SafeWork audits.
+* Lack of certified spill kits or eyewash stations results in fines exceeding $10,000 AUD.
+* Purchasing managers and tradies use company corporate cards and buy from whichever supplier guarantees **dispatch within 24 hours**.
+
+### High-Margin Compliance Catalog
+
+| Product | Wholesale Cost | Target Retail | Margin | Regulatory Driver |
+| :--- | :---: | :---: | :---: | :--- |
+| **Emergency Wall-Mount Eye Wash Station** | $45–$80 | **$169–$249** | **68%–73%** | SafeWork mandatory eye safety |
+| **Chemical / General Spill Kits (20L–120L)** | $60–$140 | **$199–$369** | **62%–70%** | Environmental & EPA spill compliance |
+| **Heavy-Duty Rubber Cable Protector Ramps** | $25–$45 | **$79–$129** | **65%–68%** | Trip hazard prevention on job sites |
+| **Retractable Crowd Control Safety Stanchions (4-Pack)** | $65–$110 | **$199–$299** | **63%–67%** | Site perimeter restriction |
+
+---
+
+## 16. Professional Pet Grooming & Equine/Hobby Farm Equipment
+*(High-Emotion, High-Ticket Enthusiast & Mobile Operator Spend)*
+
+### Why This Market Booms
+* Australians spent over **$33 billion on pets in 2025**.
+* Mobile pet grooming operators, dog daycare centers, and horse owners spend freely on heavy-duty equipment that saves time or treats injured animals.
+
+### High-Margin Pet Hardware (Dropshipzone *i.Pet* / *Pawever*)
+
+| Product | Wholesale Cost | Target Retail | Margin | Buyer Demographic |
+| :--- | :---: | :---: | :---: | :--- |
+| **Hydraulic Dog Grooming Table with Overhead Arm** | $120–$190 | **$349–$499** | **62%–65%** | Mobile groomers, breeders, dog owners |
+| **High-Velocity Pet Hair Blaster Dryer (2800W–3200W)** | $50–$80 | **$169–$239** | **66%–70%** | Large dog owners, professional salons |
+| **Adjustable Dog Mobility Wheelchairs** | $40–$75 | **$149–$219** | **65%–73%** | Post-surgery recovery, senior pets |
+| **Solar Electric Fence Energizers & Netting** | $80–$140 | **$249–$389** | **64%–68%** | Equine / hobby farm livestock protection |
+
+---
+
+## 17. Cross-Niche Comparative Economics & Blueprint
+
+| Niche | Primary Funding | Primary AU Supplier | Target AOV | Typical Margin | Price Sensitivity | Return Risk |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+| **NDIS Assistive Care** | NDIA Plan Funds | Dropshipzone / Dshop | **$150–$450** | **35%–50%** | Very Low | Minimal (Therapeutic) |
+| **Aged Care (HCP)** | Govt Home Care Package | Dropshipzone / Dshop | **$350–$1,200** | **40%–55%** | Zero | Zero (Hygiene) |
+| **Salon / Barber Fitout** | B2B Business Cards | Dropshipzone (*Artiss*) | **$600–$1,800** | **45%–60%** | Low | Zero (B2B Commercial) |
+| **WHS Site Safety** | Corporate Accounts | Trade Disties / DSZ | **$450–$1,500** | **40%–55%** | Zero | Zero (Mandated) |
+| **Pet Grooming / Equine** | Direct Consumer Card | Dropshipzone (*i.Pet*) | **$250–$700** | **40%–50%** | Moderate-Low | Minimal |
+
+---
+
+## 18. Unified Launch Checklist
+
+### Phase 1: Store Setup & Identity (Days 1–3)
+- [ ] Australian ABN registered at `abr.business.gov.au`.
+- [ ] Domain secured (e.g., `assistiveliving.com.au` or `prostudiosupplies.com.au`).
+- [ ] Shopify store created on promo plan.
+- [ ] Install **Sufio** app: configure dual template for **NDIS** and **Home Care Package (HCP)** itemised invoices (with ABN, participant/recipient number, GST itemisation).
+
+### Phase 2: Catalog Integration (Days 4–7)
+- [ ] Connect Dropshipzone retailer account via API / CSV importer.
+- [ ] Import 25 curated SKUs:
+  - 8× NDIS Sensory & Daily Living
+  - 8× HCP Senior Fall Prevention & Mobility
+  - 5× Ergonomics & Posture
+  - 4× Multi-Item B2B Starter Bundles (Lash/Barber or WHS Safety)
+- [ ] Ensure all individual items are priced under $1,500 AUD for instant approval.
+
+### Phase 3: Traffic & Validation (Days 8–14)
+- [ ] Launch Google Merchant Center Free Listings + Google Shopping PMax ($20–$30/day budget).
+- [ ] Title optimization: Front-load with: `[Product Name] - [Therapy/Safety Function] - NDIS & HCP Invoice Friendly - Fast AU Delivery`.
+- [ ] Submit store to Top 10 Australian Plan Manager & HCP Provider directories (Plan Partners, MyIntegra, Maple Plan, Australian Unity).
+
+---
+
+## 19. Key Resources
+
+| Resource | Purpose | URL |
+| :--- | :--- | :--- |
+| **Dropshipzone Retailer Portal** | Domestic AU supplier inventory & tracking | `dropshipzone.com.au` |
+| **NDIS Participant Portal** | Market data & funding guidelines | `ndis.gov.au/data-and-insights` |
+| **My Aged Care / HCP Info** | Home Care Package guidelines & rates | `myagedcare.gov.au` |
+| **Sufio Shopify Invoicing** | Automated NDIS/HCP/B2B tax invoicing | `apps.shopify.com/sufio` |
+| **SafeWork Australia** | Mandatory WHS site equipment standards | `safeworkaustralia.gov.au` |
+| **Plan Partners Directory** | Largest independent AU plan manager | `planpartners.com.au` |
+| **MyIntegra Portal** | High-volume NDIS plan manager provider hub | `myintegra.com.au` |
+| **Maple Plan** | Fast 48h EFT pay-run NDIS manager | `mapleplan.com.au` |
+
+---
+
+*Document updated: September 2026*  
+*Encompasses NDIS, Home Care Packages (Aged Care), Commercial Fitouts, WHS Safety, and Domestic Dropship Strategies.*
