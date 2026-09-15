@@ -1,7 +1,7 @@
 # NDIS, Aged Care (HCP) & High-Margin Non-Tech AU Dropship Master Playbook
 > **Date**: September 2026  
 > **Suppliers**: Dropshipzone (DSZ), Dshop, Domestic B2B Wholesalers  
-> **Platform Focus**: Shopify NDIS/HCP Webstore + Google Shopping + eBay Australia  
+> **Platform Focus**: Dual Shopify Stores (Pediatric NDIS + Senior Aged Care HCP) + Google Shopping + eBay Australia  
 > **Framework**: The "BITSmart Trust & Ads Playbook" Adapted for Government-Funded Assistive Care
 
 ---
@@ -9,24 +9,24 @@
 ## Table of Contents
 
 1. [Executive Summary & The "BITSmart for Assistive Care" Thesis](#1-executive-summary--the-bitsmart-for-assistive-care-thesis)
-2. [eBay AU Gender Demographics & Spending Baseline](#2-ebay-au-gender-demographics--spending-baseline)
-3. [Finding Demand on Dropshipzone & The DSZ-V SKU Hack](#3-finding-demand-on-dropshipzone--the-dsz-v-sku-hack)
-4. [Business Models Leveraging Domestic Free Postage](#4-business-models-leveraging-domestic-free-postage)
-5. [The October 2024 NDIS Act Reform & Support Lists (What Can & Cannot Be Sold)](#5-the-october-2024-ndis-act-reform--support-lists-what-can--cannot-be-sold)
-6. [NDIS Assistive & Daily Living Store — Deep Dive](#6-ndis-assistive--daily-living-store--deep-dive)
-7. [The "BITSmart Playbook" Applied to Assistive Care (Trust, Reviews & Google Shopping)](#7-the-bitsmart-playbook-applied-to-assistive-care-trust-reviews--google-shopping)
-8. [The "NDIS Badge" & Trademark Reality: Official Registration vs Compliant Trust Badges](#8-the-ndis-badge--trademark-reality-official-registration-vs-compliant-trust-badges)
-9. [Store UX Architecture: "$0 Plan Manager Direct" Checkout & 1-Click OT Quotes](#9-store-ux-architecture-0-plan-manager-direct-checkout--1-click-ot-quotes)
-10. [Google Shopping & Performance Max Campaign Engine](#10-google-shopping--performance-max-campaign-engine)
-11. [Returns, Warranties, Customer Support & ACL Compliance](#11-returns-warranties-customer-support--acl-compliance)
-12. [EFT Payment Timeline, Cash Flow & Working Capital Mechanics](#12-eft-payment-timeline-cash-flow--working-capital-mechanics)
-13. [Competitor Store Directory & Strategic Moats](#13-competitor-store-directory--strategic-moats)
-14. [Home Care Packages (HCP) & Aged Care Living Deep Dive](#14-home-care-packages-hcp--aged-care-living-deep-dive)
+2. [The 2-Store Split Strategy: Pediatric NDIS vs Senior Aged Care (HCP)](#2-the-2-store-split-strategy-pediatric-ndis-vs-senior-aged-care-hcp)
+3. [Market Demand & Volume Validation: Official Demographics & Search Traffic](#3-market-demand--volume-validation-official-demographics--search-traffic)
+4. [Competitor Landscape & Deep Dive: Kids (Pediatric) vs Seniors (Aged Care)](#4-competitor-landscape--deep-dive-kids-pediatric-vs-seniors-aged-care)
+5. [Dropshipzone Operations, Warehousing Proof & Shipping Economics](#5-dropshipzone-operations-warehousing-proof--shipping-economics)
+6. [The October 2024 NDIS Act Reform & Support Lists (What Can & Cannot Be Sold)](#6-the-october-2024-ndis-act-reform--support-lists-what-can--cannot-be-sold)
+7. [Store 1 Deep Dive: Pediatric & Neurodivergent Assistive Care](#7-store-1-deep-dive-pediatric--neurodivergent-assistive-care)
+8. [Store 2 Deep Dive: Senior Living & Home Care Packages (HCP)](#8-store-2-deep-dive-senior-living--home-care-packages-hcp)
+9. [The "BITSmart Playbook" Applied to Assistive Care (Trust, Reviews & Google Shopping)](#9-the-bitsmart-playbook-applied-to-assistive-care-trust-reviews--google-shopping)
+10. [The "NDIS Badge" & Trademark Reality: Official Registration vs Compliant Trust Badges](#10-the-ndis-badge--trademark-reality-official-registration-vs-compliant-trust-badges)
+11. [Store UX Architecture: "$0 Plan Manager Direct" Checkout & 1-Click OT Quotes](#11-store-ux-architecture-0-plan-manager-direct-checkout--1-click-ot-quotes)
+12. [Google Shopping & Performance Max Campaign Engine](#12-google-shopping--performance-max-campaign-engine)
+13. [Returns, Warranties, Customer Support & ACL Compliance](#13-returns-warranties-customer-support--acl-compliance)
+14. [EFT Payment Timeline, Cash Flow & Working Capital Mechanics](#14-eft-payment-timeline-cash-flow--working-capital-mechanics)
 15. [Commercial B2B Fitouts — Salon, Barber & Tattoo Studios](#15-commercial-b2b-fitouts--salon-barber--tattoo-studios)
 16. [WHS / Site Safety & Regulatory Tradie Compliance](#16-whs--site-safety--regulatory-tradie-compliance)
 17. [Professional Pet Grooming & Equine/Hobby Farm Equipment](#17-professional-pet-grooming--equinehobby-farm-equipment)
 18. [Cross-Niche Comparative Economics & Blueprint](#18-cross-niche-comparative-economics--blueprint)
-19. [Unified 14-Day Launch Checklist & Roadmap](#19-unified-14-day-launch-checklist--roadmap)
+19. [Unified 14-Day Launch Checklist & Dual-Store Roadmap](#19-unified-14-day-launch-checklist--dual-store-roadmap)
 20. [Key Resources & Partner Directory](#20-key-resources--partner-directory)
 
 ---
@@ -42,7 +42,7 @@ BITSmart (`bits-mart.com`) achieved an estimated **$4M+ AUD/year** selling Ubiqu
 
 | Metric | BITSmart (IT Hardware) | Assistive Care / HCP (Our Model) | Strategic Advantage |
 | :--- | :--- | :--- | :--- |
-| **Gross Margin** | 8%–15% | **45%–65%** | 4x–5x more gross margin buffer per order |
+| **Gross Margin** | 8%–15% | **45%–70%** | 4x–5x more gross margin buffer per order |
 | **Funding Source** | Personal / Company After-Tax Cash | **Government Budgets (NDIS / HCP)** | Buyers are price-insensitive; funding is pre-allocated |
 | **Technical Support Burden** | High (VLANs, firmware, UniFi networks) | **Zero (Durable physical aids & furniture)** | Simple mechanical assembly; no network troubleshooting |
 | **Google Ads CPC** | High ($1.50–$3.50) | **Moderate ($0.60–$1.40)** | Far higher ROAS at lower traffic acquisition cost |
@@ -51,62 +51,161 @@ BITSmart (`bits-mart.com`) achieved an estimated **$4M+ AUD/year** selling Ubiqu
 
 ---
 
-## 2. eBay AU Gender Demographics & Spending Baseline
+## 2. The 2-Store Split Strategy: Pediatric NDIS vs Senior Aged Care (HCP)
 
-### Key Statistics
-| Metric | Male | Female |
-|--------|------|--------|
-| eBay Global User Share | ~60-62% | ~38-40% |
-| eBay Australia User Share | **~65-75%** | **~25-35%** |
-| Weekly AU Online Spend | **$120–$160 AUD/week** | $85–$110 AUD/week |
-| Average Order Value (AOV) | **$85–$140 AUD** | $45–$75 AUD |
+Trying to sell both children's sensory tools and senior mobility chairs on a single generic website degrades conversion rates. Carers and healthcare case managers demand specialist authority.
 
-### Buyer Behaviour by Gender
-- **Men**: Mission-driven, search-specific. High spend on tools, hardware, auto parts, commercial equipment.
-- **Women**: Value and trust-driven. Concentrated in pre-loved designer goods, home organization, beauty hardware, and caregiving products for children or elderly parents.
+```
+                           YOUR DOMESTIC DROPSHIP ENGINE
+                         (Dropshipzone / Dshop Domestic Stock)
+                                          │
+                   ┌──────────────────────┴──────────────────────┐
+                   ▼                                             ▼
+          STORE A: PEDIATRIC NDIS                       STORE B: SENIOR AGED CARE
+    (e.g., JuniorSensory.com.au)                   (e.g., SeniorIndependence.com.au)
+   ┌───────────────────────────────┐              ┌───────────────────────────────┐
+   │ • Primary Audience:           │              │ • Primary Audience:           │
+   │   Parents of kids with ASD/   │              │   Adult daughters (40-60) &   │
+   │   ADHD, Pediatric OTs,        │              │   Aged Care Case Managers     │
+   │   Special Needs Schools       │              │ • Funding:                    │
+   │ • Funding:                    │              │   Home Care Packages (HCP) &  │
+   │   NDIS Core / Consumables     │              │   Support at Home Program     │
+   │ • Catalog Focus:              │              │ • Catalog Focus:              │
+   │   Sensory calming, wobble     │              │   Electric lift chairs, shower│
+   │   stools, study desks, balance│              │   stools, ramps, overbed desk │
+   └───────────────────────────────┘              └───────────────────────────────┘
+```
 
----
-
-## 3. Finding Demand on Dropshipzone & The DSZ-V SKU Hack
-
-### Supplier Footprint
-Dropshipzone (DSZ) operates major automated fulfillment centers across Melbourne: **Truganina VIC**, Derrimut VIC, Dandenong South VIC, and Altona North VIC.
-- Filtering eBay search results for items located in Truganina or Derrimut reveals high-velocity Dropshipzone listings.
-
-### Dropshipzone In-House Brands
-| Brand | Categories |
-|-------|-----------|
-| **Artiss** | Electric lift chairs, vanity tables, salon furniture, storage |
-| **Devanti** | Towel warmers, ultrasonic cleaners, mini fridges, air purifiers |
-| **Giselle Bedding** | Orthopedic foam toppers, pregnancy pillows, cervical support pillows |
-| **Cefito** | Grab rails, bathroom safety fixtures, stainless steel utility sinks |
-| **Everfit** | Physical rehabilitation, exercise bikes, mobility trainers |
-| **i.Pet / Pawever** | Pet grooming tables, dryers, animal mobility wheelchairs |
-
-### The DSZ-V SKU Reverse-Engineering Hack
-Automated multi-channel listing tools often retain Dropshipzone's manufacturer part numbers (MPNs):
-* Search `ebay.com.au/sch/ebayadvsearch` for keywords `"DSZ-V"` (with quotes) with "Title and description" checked and "Sold Items" selected to see real-time sold volumes and pricing.
-* Prefix indicators: `FURNI-...` (Artiss Furniture), `BA-...` (Cefito Bath & Safety), `MAT-...` (Giselle Bedding), `FIT-...` (Everfit Rehab), `PET-...` (i.Pet Mobility).
+### Why Splitting Into 2 Stores Wins
+1. **Psychological Trust**: An aged care Case Manager spending $1,200 on an electric lift chair will not buy from a site filled with pastel bubble lamps and cartoon sensory toys.
+2. **SEO & Ad Relevance**: Google Quality Score rises dramatically when your domain name, ad copy, and product landing pages align 100% with the specific search query.
+3. **Dedicated Invoicing Presets**:
+   * Store A presets invoices to NDIS Support Categories (`03_Core - Consumables / Low Cost AT`).
+   * Store B presets invoices to HCP Provider accounts (`My Aged Care Home Care Package Levels 1-4 / Support at Home`).
 
 ---
 
-## 4. Business Models Leveraging Domestic Free Postage
+## 3. Market Demand & Volume Validation: Official Demographics & Search Traffic
 
-### Model 1: eBay AU Fast & Free Marketplace Store
-- Focus on $50–$180 AUD items.
-- Run Promoted Listings Standard (PLS) at 3%–4.5%.
-- Turn on Multi-Buy discounts (5% off 2, 10% off 3).
-- Leverages eBay's built-in organic traffic and buyer trust.
-
-### Model 2: Branded Specialist Webstore (Shopify)
-- Operates under a dedicated brand (e.g., *Assistive Living Australia* or *Independence Direct*).
-- 30–50 curated domestic products.
-- Products retail for 25%–45% higher than on eBay because B2B/NDIS plan managers seek invoice compliance, not bargain hunting.
-- Enables direct automated plan manager billing.
+### Macro Market Data
+* **Australian Assistive Technology (AT) Market**: **>$4.0 Billion AUD** (growing at ~6.1% CAGR).
+* **Total NDIS Participants**: **774,456** (spending >$1.8B annually on low-cost AT & consumables).
+* **Home Care Package Recipients**: **320,000+** seniors receiving $10,271 to $59,593 per person per year.
 
 ---
 
-## 5. The October 2024 NDIS Act Reform & Support Lists (What Can & Cannot Be Sold)
+### Segment 1: Pediatric NDIS Market Demographics
+* **Over 380,000 NDIS participants are under 18 years old** (~50% of the entire scheme).
+* **69% of new participants** joining the scheme between July and December 2024 were under 15 years old.
+* In early childhood (ages 5–7), **10% to 11% of all Australian children** are supported by the NDIS (rising to 15%–16% for boys).
+* Primary conditions: **Autism Spectrum Disorder (ASD)** and **Developmental Delay**.
+
+#### Monthly AU Google Search Volumes (Pediatric & Sensory)
+| Search Query | Monthly AU Volume | Commercial Intent | Primary Buyer |
+| :--- | :---: | :---: | :--- |
+| `"sensory toys australia"` | **18,000 – 24,000** | Very High | Parents & Educators |
+| `"autism toys / tools australia"` | **12,000 – 16,000** | Very High | Parents & Therapists |
+| `"weighted blanket kids"` | **8,000 – 12,000** | High | Carers & Parents |
+| `"sensory swing australia"` | **6,500 – 9,500** | Very High | OT-recommended home setup |
+| `"bubble tube sensory lamp"` | **4,000 – 6,500** | High | Sensory rooms & bedrooms |
+| `"wobble stool / kids active chair"` | **3,000 – 5,000** | Very High | School & home study ergonomics |
+| `"chewelry australia"` | **2,500 – 4,000** | High | Neurodivergent oral sensory |
+| `"ndis sensory shop online"` | **3,500 – 5,500** | Maximum | Direct Plan Manager checkout |
+
+---
+
+### Segment 2: Senior Aged Care (HCP) Market Demographics
+* Over **4.3 million Australians are aged 65+** (fastest growing demographic in Australia).
+* **320,000+ active Home Care Packages** transitioning to the Federal Government's **$5.6 Billion Support at Home program**.
+* Fall-related injuries cost Australian hospitals >$2.3 Billion annually; Case Managers are incentivized to approve fall-prevention equipment immediately without friction.
+
+#### Monthly AU Google Search Volumes (Seniors & Mobility)
+| Search Query | Monthly AU Volume | Commercial Intent | Primary Buyer |
+| :--- | :---: | :---: | :--- |
+| `"electric lift chair australia / recliner"` | **14,000 – 19,000** | Maximum | Adult children & Case Managers |
+| `"shower chair / bath stool elderly"` | **9,000 – 14,000** | Very High | Urgent hospital discharge / Carers |
+| `"wheelchair ramp / threshold ramp australia"` | **11,000 – 15,000** | Very High | Home accessibility access |
+| `"mobility aids australia / walking frame"` | **8,000 – 12,000** | High | Seniors & Carers |
+| `"bed assist rail elderly / bed handle"` | **5,000 – 7,500** | High | Fall prevention |
+| `"overbed table aged care"` | **4,500 – 7,000** | Very High | Bedbound/armchair daily dining |
+| `"raised toilet seat with handles"` | **4,000 – 6,000** | High | Post-surgery / hip replacement |
+| `"home care package equipment provider"` | **1,500 – 3,000** | Maximum (B2B) | HCP Case Managers & Care Coordinators |
+
+---
+
+## 4. Competitor Landscape & Deep Dive: Kids (Pediatric) vs Seniors (Aged Care)
+
+### Store Type A: Pediatric & Kids NDIS Competitors
+
+| Competitor | URL | Est. Monthly Traffic | Est. Annual Revenue | Model | Key Takeaway / Vulnerability |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| **Sister Sensory** | `sistersensory.com.au` | ~45,000 visits | $1.8M–$2.5M AUD | Online NDIS store | Pioneer in the space, but freight is calculated manually on heavy items; slow mobile checkout. |
+| **The Sensory Specialist** | `thesensoryspecialist.com.au` | ~35,000 visits | $1.2M–$2.0M AUD | Online + Wholesale | Founded by an OT; partnerships with Baby Bunting/Chemist Warehouse prove massive demand. |
+| **Starfish Store** | `starfishstore.com.au` | ~25,000 visits | $800k–$1.2M AUD | Online + NDIS registered | Specializes in educational/therapy tools. Heavy text-based layout, easy to out-design. |
+| **My Happy Helpers** | `myhappyhelpers.com.au` | ~85,000 visits | $3.5M–$5.0M AUD | DTC brand + NDIS | Massive brand in play furniture; offers NDIS checkout; demonstrates huge parent spend. |
+| **Sensory Oasis for Kids** | `sensoryoasisforkids.com.au` | ~20,000 visits | Ceased retail (2024) | Brick-and-mortar retail | **CRITICAL LESSON**: Their physical store closed in late 2024 due to crushing retail rent and staff overhead. **Pure-play dropshipping has zero rent risk.** |
+
+---
+
+### Store Type B: Seniors & Aged Care (HCP) Competitors
+
+| Competitor | URL | Est. Monthly Traffic | Est. Annual Revenue | Model | Key Takeaway / Vulnerability |
+| :--- | :--- | :---: | :---: | :--- | :--- |
+| **Mobility Shop Direct** | `mobilityshopdirect.com.au` | ~70,000 visits | **$3.5M–$5.0M AUD** | **100% Dropshipping (Shopify)** | **The Blueprint**: Holds zero stock, has no showrooms, dropships from AU wholesalers, dominates Google Shopping. |
+| **Independent Living Specialists (ILS)** | `ilsau.com.au` | ~180,000 visits | $40M+ AUD | Brick-and-mortar chain | Massive retail markups (sells lift chairs for $1,800–$2,800). Easy to undercut by 30% while retaining 55% margin. |
+| **Aidacare** | `aidacare.com.au` | ~120,000 visits | $50M+ AUD | Institutional supplier | Focuses on hospitals and nursing homes; retail checkout is clunky and intimidating for individual families. |
+| **Ramped Up** | `rampedup.com.au` | ~15,000 visits | $600k–$1.0M AUD | Specialist Dropshipper | Proves that a single sub-niche (modular threshold ramps) can generate a full-time income on Shopify. |
+| **Aged Care Store** | `agedcarestore.com.au` | ~18,000 visits | $800k–$1.4M AUD | Medical reseller | Outdated 2012-era website design; lacks modern automated Plan Manager/HCP billing. |
+
+---
+
+## 5. Dropshipzone Operations, Warehousing Proof & Shipping Economics
+
+### 5A. Corporate Entity & Physical Warehousing Proof
+Dropshipzone (`dropshipzone.com.au`) is not an independent retail broker—it is 100% owned, operated, and physically fulfilled by **New Aim Pty Ltd** (ABN 50 115 804 432), Australia’s largest private e-commerce supplier and dropship infrastructure firm:
+* **Flagship National Distribution Hub**: In 2023, New Aim commissioned its multi-hectare automated distribution center at **Melbourne Business Park — 90 Melbourne Drive, Truganina VIC 3029**.
+* **Secondary Logistics Facilities**: New Aim maintains adjoining container-unpacking and fulfillment facilities across Melbourne's western industrial corridor in **Derrimut** (e.g., Makland Drive, Fulton Drive) and **Laverton North**.
+* **Carrier Manifests**: Orders are collected daily directly from these Melbourne docks by Australia Post, Allied Express, Hunter Express, Team Global Express (Toll), and Aramex.
+
+### 5B. The Truth About "Free Shipping" & Postcode Zone Mapping
+Dropshipzone does **not** offer unconditional free shipping to every remote corner of Australia. It utilizes a **Postcode Zone Mapping System**, as evidenced in retailer feed files (e.g. `sample_dropshipzone_input.csv`):
+
+```csv
+"SKU", "Price", "Delivery(ACT)", "Delivery(NSW_M)", "Delivery(NSW_R)", "Delivery(NT_M)", "Delivery(NT_R)", "Delivery(QLD_M)", "Delivery(VIC_M)"...
+"V888-...", "19.80", "0", "0", "0", "0", "0", "0", "0"...
+```
+
+1. **Metro Free Delivery (Zone Rate = '0')**:
+   * For standard-sized products (shower stools, bed assist rails, sensory bubble tubes, wobble chairs), Dropshipzone suppliers configure delivery rates to **$0** across major metropolitan capital city zones (`VIC_M`, `NSW_M`, `QLD_M`, `ACT`, `SA_M`).
+2. **Bulky Items & Regional Freight Surcharges**:
+   * For heavy furniture items (such as an 80kg Artiss Electric Lift Chair), metro delivery is either included in wholesale or low-cost ($20–$40), whereas regional (`NSW_R`, `QLD_R`) or remote (`NT`, Outback WA) postcodes incur carrier surcharges.
+
+### 5C. The NDIS & HCP Freight Advantage (Zero Margin Erosion)
+In standard consumer e-commerce, regional freight surcharges erode profit margins. **In NDIS and Home Care Package billing, freight is 100% government-claimable**:
+* Under NDIA Pricing Arrangements and My Aged Care guidelines, delivery costs for necessary Assistive Technology are an eligible expense under Core/Consumables.
+* If Dropshipzone charges $65 courier freight to deliver an electric lift chair to a regional participant, Sufio itemizes the invoice:
+  * `Line Item 1: Artiss Electric Dual-Motor Lift Recliner - $999.00 AUD`
+  * `Line Item 2: Heavy Tracked Courier Delivery (Direct to Door) - $65.00 AUD`
+  * `Total Invoiced to Plan Manager: $1,064.00 AUD`
+* The Plan Manager pays the full $1,064.00 via EFT, ensuring your **60% gross profit margin remains 100% intact**.
+
+### 5D. In-House Proprietary Brands (Factory Direct Importer)
+New Aim designs, imports, and controls its own proprietary registered trademarks, cutting out traditional wholesale middlemen:
+* **Artiss**: New Aim's registered furniture brand (motorized lift chairs, study desks, recliners, storage).
+* **Cefito**: New Aim's registered bathroom & safety brand (medical shower stools, grab rails, stainless sinks).
+* **Devanti**: New Aim's appliance brand (towel warmers, air purifiers, ultrasonic cleaners).
+* **Giselle Bedding**: New Aim's orthopedic foam, pressure care toppers, and support pillows.
+* **Everfit**: New Aim's rehabilitation, mobility, and physical exercise brand.
+
+### 5E. The DSZ-V SKU Reverse-Engineering Hack & 2-Minute Verification
+Dropshipzone's automated listing integration embeds manufacturer part numbers into marketplace listings:
+* **eBay Verification**: Search `ebay.com.au` for `"Artiss Electric Lift Chair"` or `"Cefito Shower Stool"`. Check the top 3 listings under "Postage, returns and payments" — the Item Location is explicitly listed as **"Truganina, VIC, Australia"** or **"Derrimut, VIC, Australia"**.
+* **SKU Prefixes**: `FURNI-...` (Artiss Furniture), `BA-...` (Cefito Bath & Safety), `MAT-...` (Giselle Bedding), `FIT-...` (Everfit Rehab).
+* **Dropshipzone Portal**: Filtering by Artiss or Cefito in the Dropshipzone Retailer Hub displays real-time wholesale pricing and warehouse stock availability (QOH) in Melbourne.
+
+---
+
+## 6. The October 2024 NDIS Act Reform & Support Lists (What Can & Cannot Be Sold)
 
 In October 2024, the Australian Parliament enacted the *National Disability Insurance Scheme Amendment (Getting the NDIS Back on Track No. 1) Act 2024*. The NDIA introduced mandatory **Lists of NDIS Supports** detailing what NDIS funding can and cannot legally cover.
 
@@ -118,7 +217,7 @@ The NDIA strictly cracked down on items considered standard household goods or r
 * ❌ **Everyday Electronics**: Generic Bluetooth headphones (unless accompanied by clinical justification for sensory/communication impairment).
 * ⚠️ **Weighted Blankets**: Reclassified as "higher risk" for pediatric participants; Plan Managers now require Occupational Therapist (OT) sign-off prior to reimbursement.
 
-> **Crucial Rule**: Selling generic sensory toys without OT reports leads to Plan Manager payment rejections, delays, and customer disputes.
+> **Crucial Rule for Store A**: Frame all pediatric items as **"Therapeutic Sensory Regulation & Postural Support Equipment"**, never as "toys". Provide downloadable OT Clinical Justification Templates on product pages to facilitate Plan Manager sign-off.
 
 ### The Approved Gold Standard: Low-Cost Assistive Technology (< $1,500 AUD)
 The NDIA explicitly continues to fund items under the **Assistive Technology, Home Modifications and Consumables Code Guide** under Capital/Core budgets where items are directly related to disability and functional independence:
@@ -130,35 +229,47 @@ The NDIA explicitly continues to fund items under the **Assistive Technology, Ho
 
 ---
 
-## 6. NDIS Assistive & Daily Living Store — Deep Dive
+## 7. Store 1 Deep Dive: Pediatric & Neurodivergent Assistive Care
 
-### Market Opportunity
-* **Total Active NDIS Participants**: ~775,000+
-* **Plan-Managed**: 68% (~526,000)
-* **Self-Managed**: 26% (~201,000)
-* **Agency-Managed (NDIA)**: 6% (~47,000)
-* **Addressable Market for Unregistered Stores**: **94% (~727,000 participants)**
-* **Annual Low-Cost Assistive Technology & Consumables Expenditure**: Exceeds **$1.8 Billion AUD**.
+### Core Positioning
+* **Brand Concept**: *JuniorSensory.com.au* or *PediatricCareDirect.com.au*
+* **Mission**: "Therapeutic Sensory Regulation, Ergonomics & Daily Living Aids for Neurodivergent Children — NDIS Plan-Managed Friendly."
+* **Primary Target**: Parents of children with Autism (ASD) and ADHD, Occupational Therapists, Special Education Coordinators.
 
-### Regulatory Rule
-* Low-Cost Assistive Technology items **under $1,500 AUD** do not require NDIA quotes or prior approval for Plan-Managed or Self-Managed participants.
-* You do **NOT** need to be an NDIS Registered Provider.
-* You only need an Australian ABN and an itemised tax invoice showing participant details and appropriate support categories.
+### Dropshipzone Pediatric Catalog & Unit Economics
 
-### Dropshipzone Core High-Margin Catalog
-
-| Product Line | DSZ Wholesale (Inc Free Shipping) | Target Retail Price | Gross Profit | Gross Margin | NDIA Category Code / Rationale |
+| Product Line | DSZ Wholesale (Inc Post) | Target Retail Price | Gross Profit | Gross Margin | Therapeutic Purpose / NDIS Justification |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **Adjustable Shower Stool with Arms** | $34.50 | **$119.00** | **+$84.50** | **71%** | `03_Personal Care & Safety` |
-| **Modular Rubber Threshold Ramp (1.5m)** | $48.00 | **$159.00** | **+$111.00** | **70%** | `05_Mobility & Access` |
-| **Bedside Safety Transfer Handle** | $27.00 | **$99.00** | **+$72.00** | **73%** | `05_Transfer Equipment` |
-| **Mobile Overbed Adjustable Table** | $38.00 | **$139.00** | **+$101.00** | **73%** | `03_Daily Living Aids` |
-| **Artiss Electric Lift & Recline Chair** | $360.00 | **$899.00** | **+$539.00** | **60%** | `05_Specialist Seating` |
-| **Electric Motorised Sit-Stand Desk Frame** | $145.00 | **$349.00** | **+$204.00** | **58%** | `AT for Study & Employment` |
+| **LED Bubble Tube Sensory Lamp (1.2m–1.5m)** | $52.00 | **$169.00** | **+$117.00** | **69%** | Visual calming & self-regulation in sensory meltdowns |
+| **Ergonomic Wobble Active Seating Stool** | $34.00 | **$119.00** | **+$85.00** | **71%** | Vestibular & proprioceptive input for ADHD focus during study |
+| **Motorised Kids Electric Sit-Stand Desk** | $145.00 | **$349.00** | **+$204.00** | **58%** | Postural support & physical movement during home learning |
+| **Indoor Compression Therapy Pod Swing** | $36.00 | **$129.00** | **+$93.00** | **72%** | Deep pressure therapy & vestibular calming for autism |
+| **Orthopedic High-Density Wedge Positioning Cushion** | $26.00 | **$89.00** | **+$63.00** | **70%** | Postural alignment & sensory floor seating |
+| **Balance Beam & Stepping Stones Set** | $38.00 | **$129.00** | **+$91.00** | **70%** | Gross motor skill development & physical therapy |
 
 ---
 
-## 7. The "BITSmart Playbook" Applied to Assistive Care (Trust, Reviews & Google Shopping)
+## 8. Store 2 Deep Dive: Senior Living & Home Care Packages (HCP)
+
+### Core Positioning
+* **Brand Concept**: *SeniorIndependence.com.au* or *MobilityLivingDirect.com.au*
+* **Mission**: "Dignified Home Independence, Fall Prevention & Mobility Aids for Seniors — Approved Billing for Home Care Package (HCP) Providers."
+* **Primary Target**: Adult daughters and sons (aged 40–60) caring for elderly parents, HCP Case Managers (Australian Unity, Bolton Clarke, Anglicare).
+
+### Dropshipzone Senior & HCP Catalog & Unit Economics
+
+| Product Line | DSZ Wholesale (Inc Post) | Target Retail Price | Gross Profit | Gross Margin | Fall Prevention & Aged Care Benefit |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Artiss Electric Lift & Recline Chair (Dual Motor)** | $360.00 | **$899.00** | **+$539.00** | **60%** | Prevents falls when standing; preserves leg independence |
+| **Cefito Medical Shower Stool with Padded Arms** | $34.50 | **$119.00** | **+$84.50** | **71%** | Eliminates bathroom slip hazards during personal hygiene |
+| **Modular Rubber Threshold Doorway Ramp (1.5m)** | $48.00 | **$159.00** | **+$111.00** | **70%** | Allows smooth walker & wheelchair passage over sliding tracks |
+| **Bedside Safety Transfer Assist Handle & Pocket** | $27.00 | **$99.00** | **+$72.00** | **73%** | Safe leverage to enter/exit bed without caregiver strain |
+| **Mobile Tilt Overbed / Over-Armchair Dining Table** | $38.00 | **$139.00** | **+$101.00** | **73%** | Secure meal, book, and medication surface from chair/bed |
+| **Motorised Low-Impact Leg Rehabilitation Pedaler** | $45.00 | **$149.00** | **+$104.00** | **70%** | Circulatory maintenance & joint mobility for seated seniors |
+
+---
+
+## 9. The "BITSmart Playbook" Applied to Assistive Care (Trust, Reviews & Google Shopping)
 
 BITSmart dominates because they engineered **extreme trust** on a clean Shopify storefront and weaponized **Google Shopping Ads with gold star ratings**.
 
@@ -193,7 +304,7 @@ Unlike typical dropship stores, an Assistive Care store must convey clinical sta
 
 ---
 
-## 8. The "NDIS Badge" & Trademark Reality: Official Registration vs Compliant Trust Badges
+## 10. The "NDIS Badge" & Trademark Reality: Official Registration vs Compliant Trust Badges
 
 ### The Trademark Legal Reality
 * The acronym **"NDIS"** and the official **NDIS Logo / "I heart NDIS" emblem** are registered trademarks of the National Disability Insurance Agency (NDIA).
@@ -227,7 +338,7 @@ You do not need the NDIA logo to project complete trust. Plan Managers and carer
 
 ---
 
-## 9. Store UX Architecture: "$0 Plan Manager Direct" Checkout & 1-Click OT Quotes
+## 11. Store UX Architecture: "$0 Plan Manager Direct" Checkout & 1-Click OT Quotes
 
 ### The Core Problem with Competitors
 Most online stores force participants or families to pay upfront with their own credit card, then wait 2–3 weeks for reimbursement from their Plan Manager. Many families cannot afford to float $300–$1,000.
@@ -273,20 +384,20 @@ For higher-ticket items ($500–$1,500, such as electric lift chairs or modular 
 
 ---
 
-## 10. Google Shopping & Performance Max Campaign Engine
+## 12. Google Shopping & Performance Max Campaign Engine
 
 ### Product Feed Optimization Formula
 Google Merchant Center titles dictate impression volume. Follow this high-intent formula:
 ```
 [Brand] + [Core Product Name] + [Therapeutic / Functional Benefit] + [NDIS / HCP Invoice Ready] + [AU Stock]
 ```
-* **Example 1**: `Artiss Electric Lift Recliner Chair - Fall Prevention & Mobility Assistance - NDIS & Aged Care Invoice Friendly - Melbourne Dispatch`
-* **Example 2**: `Cefito Adjustable Medical Shower Stool with Armrests - Non-Slip Bathroom Safety - NDIS Plan Manager Approved - Fast AU Delivery`
-* **Example 3**: `Modular Rubber Threshold Doorway Ramp 1.5m - Wheelchair & Walker Access - NDIS Consumables - Australian Stock`
+* **Store A Example**: `SensoryPro LED Bubble Tube 1.2m - Sensory Calming & Focus - NDIS Plan Manager Approved - Fast AU Delivery`
+* **Store B Example 1**: `Artiss Electric Lift Recliner Chair - Fall Prevention & Mobility Assistance - Aged Care & NDIS Invoice Ready - Melbourne Stock`
+* **Store B Example 2**: `Cefito Medical Shower Stool with Armrests - Non-Slip Bathroom Safety - Home Care Package Approved - Fast AU Delivery`
 
 ### Campaign Structure
 1. **Standard Shopping (Hero SKUs)**:
-   * Dedicate individual ad groups to the Top 5 High-Margin items (Lift Chairs, Shower Stools, Ramps, Overbed Tables).
+   * Dedicate individual ad groups to the Top 5 High-Margin items per store.
    * Manual CPC or Target ROAS (350%–500%).
 2. **Performance Max (PMax) Feed-Only**:
    * Run a PMax campaign without assets (feed only) targeting the remaining catalog.
@@ -296,7 +407,7 @@ Google Merchant Center titles dictate impression volume. Follow this high-intent
 
 ---
 
-## 11. Returns, Warranties, Customer Support & ACL Compliance
+## 13. Returns, Warranties, Customer Support & ACL Compliance
 
 ### Australian Consumer Law (ACL) & Change of Mind
 Under Australian Consumer Law, retailers are **not legally obligated** to provide refunds for change-of-mind purchases.
@@ -313,7 +424,7 @@ Under Australian Consumer Law, retailers are **not legally obligated** to provid
 
 ---
 
-## 12. EFT Payment Timeline, Cash Flow & Working Capital Mechanics
+## 14. EFT Payment Timeline, Cash Flow & Working Capital Mechanics
 
 ### The Plan Manager Pay-Run Cycle
 
@@ -330,34 +441,6 @@ Day 6–8: Dropshipzone delivers tracked parcel to customer's door.
 ### Working Capital Rule
 * **GOLDEN RULE**: **Never fulfill an order on Dropshipzone until the Plan Manager's EFT payment has cleared in your bank account.**
 * Because Plan Managers pay via EFT before you pay Dropshipzone, the business operates on **negative working capital**—you never float your own money for inventory or customer orders.
-
----
-
-## 13. Competitor Store Directory & Strategic Moats
-
-| Competitor | URL | Weakness / Strategic Gap | Our Moat Against Them |
-| :--- | :--- | :--- | :--- |
-| **Aidacare / ILS** | `aidacare.com.au` | Massive corporate overhead; high retail markup; slow delivery | Faster domestic dispatch; lower competitive pricing |
-| **Sister Sensory** | `sistersensory.com.au` | Hit hard by Oct 2024 sensory toy restrictions; manual invoicing | Daily Living & HCP focus; 100% automated checkout invoicing |
-| **Sensory Oasis** | `sensoryoasisforchildren.com.au` | Pediatric only; no aged care or ergonomic products | Dual NDIS + Aged Care (HCP) senior living reach |
-| **Everyday Mobility** | Various eBay sellers | No branded trust; poor invoicing; cannot sell to Plan Managers | Professional Shopify store + automated plan manager billing |
-
----
-
-## 14. Home Care Packages (HCP) & Aged Care Living Deep Dive
-
-### Market Overview
-* The Australian Government funds **Home Care Packages (HCP Levels 1 to 4)**, granting **$10,271 to $59,593 per person per year** to senior Australians to enable independent living at home.
-* Over **320,000+ active recipients**, transitioning to the new *Support at Home* program.
-* Case Managers (at providers like *Australian Unity, Bolton Clarke, Anglicare, Uniting*) manage these budgets.
-* Unlike the NDIS, HCP funding has **no restriction on fall-prevention and mobility furniture**—Case Managers approve lift chairs, overbed tables, and bathroom stools immediately to prevent costly hospital admissions.
-
-### High-Margin Aged Care Product Catalog
-* **Modular Threshold Rubber Ramps**: DSZ wholesale $48 → Retail **$159 AUD** (70% margin)
-* **Electric Lift & Recline Armchairs**: DSZ wholesale $360 → Retail **$899–$1,099 AUD** (60% margin)
-* **Bedside Safety Transfer Assist Handles**: DSZ wholesale $27 → Retail **$99 AUD** (73% margin)
-* **Overbed Mobile Dining & Medication Tables**: DSZ wholesale $38 → Retail **$139 AUD** (73% margin)
-* **Anti-Slip Adjustable Shower Stools**: DSZ wholesale $34.50 → Retail **$119 AUD** (71% margin)
 
 ---
 
@@ -392,52 +475,52 @@ Day 6–8: Dropshipzone delivers tracked parcel to customer's door.
 
 | Niche Store | Primary Payer | Target AOV | Typical Margin | Price Sensitivity | Technical Burden | Regulatory Barrier |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **NDIS Daily Living Aids** | NDIA Plan Funds | **$180–$450** | **55%–70%** | Very Low | Zero | None (<$1,500 AT) |
-| **Aged Care Living (HCP)** | Govt HCP Package | **$350–$1,100** | **55%–65%** | Zero | Zero | None (Open billing) |
+| **Pediatric NDIS Store (Store A)** | NDIA Plan Funds | **$120–$350** | **60%–72%** | Very Low | Zero | None (<$1,500 AT) |
+| **Senior Living & HCP (Store B)** | Govt HCP / Care Fund | **$350–$1,100** | **55%–65%** | Zero | Zero | None (Open billing) |
 | **Salon / Barber Fitout** | B2B Business Card | **$600–$1,500** | **50%–65%** | Low | Zero | Commercial exclusion |
 | **WHS Site Safety** | Corporate Accounts | **$300–$900** | **45%–60%** | Zero | Zero | Mandated gear |
 | **Pet Grooming / Equine** | Direct Consumer Card | **$200–$500** | **45%–55%** | Moderate | Zero | Standard consumer |
 
 ---
 
-## 19. Unified 14-Day Launch Checklist & Roadmap
+## 19. Unified 14-Day Launch Checklist & Dual-Store Roadmap
 
-### Phase 1: Legal Entity & Identity (Days 1–3)
-- [ ] Ensure legal entity (Sole Trader or Family Pty Ltd ABN) is active at `abr.business.gov.au`.
-- [ ] Register domain name (e.g. `assistiveliving.com.au` or `independencedirect.com.au`).
-- [ ] Create Shopify store on promotional pricing ($1/month tier).
-- [ ] Apply clean, high-contrast, WCAG 2.1 AA accessible theme (modified Dawn theme).
+### Phase 1: Entity & Store Infrastructure (Days 1–3)
+- [ ] Active ABN registered via `abr.business.gov.au`.
+- [ ] Secure dual domain names:
+  * Store A: `juniorsensory.com.au` (or similar pediatric therapy brand)
+  * Store B: `seniorindependence.com.au` (or similar mobility/aged care brand)
+- [ ] Spin up 2 Shopify stores on promo pricing ($1/month tier).
+- [ ] Configure Shopify themes with high-contrast, WCAG 2.1 AA accessible typography and clear contact channels.
 
-### Phase 2: Invoicing, Reviews & Apps Integration (Days 4–6)
-- [ ] Install **Sufio** (Automatic NDIS/HCP compliant tax invoice generator).
-  - Configure template: include legal business name, ABN, BSB/Account for EFT payments, and custom participant number fields.
-- [ ] Install **Judge.me** for automated post-purchase review collection and Google Review syndication.
-- [ ] Install **Globo Request a Quote** for 1-click OT quotes on items >$500.
+### Phase 2: Apps, Invoicing & Review Architecture (Days 4–6)
+- [ ] Install **Sufio** on both stores:
+  * Store A template: Format for NDIS Core/Consumables with participant NDIS number.
+  * Store B template: Format for Home Care Package (HCP) providers with Client ID and case manager billing.
+- [ ] Install **Judge.me** on both stores (enable Google Merchant Center product review syndication).
+- [ ] Install **Globo Request a Quote** on Store B for 1-click OT quotes on items >$500.
 - [ ] Configure custom checkout field for "Invoice My Plan Manager" payment option.
 
-### Phase 3: Catalog Curation & Upload (Days 7–9)
+### Phase 3: Catalog Import & Positioning (Days 7–9)
 - [ ] Connect Dropshipzone retailer account via API / CSV importer.
-- [ ] Import the Top 25 Daily Living & Fall Prevention SKUs:
-  - 6× Bathroom Safety (Shower stools, transfer benches, grab rails)
-  - 6× Mobility & Access (Modular rubber threshold ramps)
-  - 5× Bedroom & Living Transfer (Bed assist rails, mobile overbed tables)
-  - 4× Specialist Comfort & Seating (Artiss electric lift chairs)
-  - 4× Workstation Ergonomics (Motorised sit-stand desk frames)
+- [ ] Import curated SKUs:
+  * Store A: 20× Sensory bubble tubes, active wobble stools, therapy swings, pediatric positioning wedges, study desks.
+  * Store B: 20× Artiss lift chairs, Cefito medical shower stools, threshold ramps, bedside rails, overbed dining tables.
 - [ ] Ensure all individual SKUs retail under $1,500 AUD to maintain instant-approval status.
 
-### Phase 4: Google Merchant Center & Google Shopping Ads (Days 10–12)
-- [ ] Set up Google Merchant Center account and verify domain.
-- [ ] Push Shopify product catalog into Google Merchant Center.
-- [ ] Format all Google Shopping titles using the formula:  
-  `[Brand] + [Product Name] + [Mobility / Safety Benefit] + [NDIS & HCP Plan Manager Friendly] + [AU Stock]`
-- [ ] Link Google Merchant Center to Judge.me product review feed.
-- [ ] Launch Google Shopping campaign ($20–$30/day budget) targeting exact-intent queries.
-- [ ] Implement negative keyword list to eliminate non-commercial traffic.
+### Phase 4: Google Merchant Center & Shopping Ads (Days 10–12)
+- [ ] Verify both domains in Google Merchant Center.
+- [ ] Link Google Merchant Center to Google Ads and Judge.me review feeds.
+- [ ] Optimize product feed titles using the formula:  
+  `[Brand] + [Product Name] + [Benefit] + [NDIS & HCP Friendly] + [AU Stock]`
+- [ ] Launch Google Shopping Standard campaigns ($20/day per store) targeting exact-intent queries.
+- [ ] Add the negative keyword master list to prevent wasted clicks.
 
-### Phase 5: Plan Manager Directory Submissions & Scaling (Days 13–14)
-- [ ] Submit store profile to Top 10 Plan Manager directories: *Plan Partners, MyIntegra, Maple Plan, Leap in!, Moira, Australian Unity*.
-- [ ] Test end-to-end "Invoice My Plan Manager" checkout: confirm Sufio auto-generates compliant PDF and emails it successfully.
-- [ ] Launch store and scale Google Ads spend as positive cash flow compounds.
+### Phase 5: Directory Submissions & Scaling (Days 13–14)
+- [ ] Submit Store A to autism and pediatric therapy directories.
+- [ ] Submit Store B to top 15 NDIS Plan Management directories (*Plan Partners, MyIntegra, Maple Plan, Leap in!, Moira*) and HCP provider directories (*Australian Unity, Bolton Clarke*).
+- [ ] Verify test order: confirm Sufio auto-generates compliant PDF and emails it successfully.
+- [ ] Scale Google Ads budget from profits as positive cash flow compounds.
 
 ---
 
@@ -457,4 +540,4 @@ Day 6–8: Dropshipzone delivers tracked parcel to customer's door.
 ---
 
 *Document revised & validated: September 2026*  
-*Fully reflects the post-October 2024 NDIS Amendment Act, NDIA Trademark Compliance, and the BITSmart Google Shopping + Review Architecture.*
+*Encompasses Dual-Store Pediatric & Senior Strategy, Real Competitor Teardowns, Search Volumes, and the BITSmart Google Shopping + Review Architecture.*
