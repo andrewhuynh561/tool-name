@@ -1,1 +1,78 @@
-https://res.cloudinary.com/smqochzy/image/upload/v1788611268/OpenAI_Playground_2026-09-05_at_21.54.57.png
+# ==============================================================================
+# EBAY STORE 2 CONFIGURATION PROFILE: AuGoodVantage
+# ==============================================================================
+# Direct references for quick retrieval:
+# WATERMARK_URL: https://res.cloudinary.com/smqochzy/image/upload/v1788611268/OpenAI_Playground_2026-09-05_at_21.54.57.png
+# TEMPLATE_FILE: augoodvantage_template_preview.html
+# SNAPSHOT_FILE: pipeline/snapshots/store2_seen_skus.txt
+# TITLE_SUFFIX:  AU Fast Post (also referred to as AU Postage / AU Fast Postage)
+# OUTPUT_FILE:   output_ebay_upload_store2.csv
+# ==============================================================================
+
+[STORE_IDENTITY]
+store_id = store2
+store_aliases = store2, store_2, agv, augoodvantage, Au Good Vantage, AU Good Vantage
+store_name = AuGoodVantage
+store_url = https://www.ebay.com.au/str/augoodvantage
+ebay_site_id = 15 (eBay Australia - ebay.com.au)
+currency = AUD
+
+[SKU_RULES]
+sku_prefix = AGV-
+custom_label_format = AGV-{SUPPLIER_SKU}
+
+[TITLE_RULES]
+title_suffix =  AU Fast Post
+title_suffix_aliases = "AU Fast Post", "AU Postage", "AU Fast Postage"
+max_title_length = 80
+truncation_mode = word_boundary_safe
+strip_supplier_prefixes = true
+strip_brand_keywords = Landhoow, Weisshorn, Everfit, Alritz, JIALWEN, TAMOSH
+title_formula = [Front-loaded Keywords + Attributes without Brand Prefix] + " AU Fast Post" (up to 80 chars)
+
+[WATERMARK_RULES]
+watermark_image_url = https://res.cloudinary.com/smqochzy/image/upload/v1788611268/OpenAI_Playground_2026-09-05_at_21.54.57.png
+watermark_public_id = OpenAI_Playground_2026-09-05_at_21.54.57
+cloudinary_cloud_name = smqochzy
+watermark_gravity = south
+watermark_width_pct = 100
+watermark_x_offset = 0
+watermark_y_offset = 0
+watermark_opacity = 95
+watermark_target = hero_image_1_only (secondary images raw CDN URLs)
+
+[HTML_TEMPLATE]
+template_file = augoodvantage_template_preview.html
+template_theme = Modern Clean Coral (#FFFFFF background, #FCF8F7 cards, #4E5361 slate, #E5A19C warm coral)
+brand_slogan = SMART CHOICES. BETTER DEALS. GOOD VANTAGE.
+subheading = Helping you live well for less with feel-good finds and everyday essentials.
+badge_text = 100% Australian Stock & Fast Dispatch | 30-Day Returns | Dedicated Support
+
+[SNAPSHOT_RULES]
+delta_snapshot_file = pipeline/snapshots/store2_seen_skus.txt
+active_skus_reference_1 = pipeline/snapshots/store2_seen_skus.txt
+delta_mode_rule = Filter out previously listed SKUs; append new batch SKUs to store2_seen_skus.txt
+
+[PRICING_RULES]
+pricing_formula = RRP (direct, no flat fee markup)
+flat_fee = 0.00
+charm_price = false (standard 2 decimal rounding, e.g. $45.50)
+minimum_price = 9.99
+ebay_fee_rate = 0.135 (13.5%)
+apply_active_rebate = true
+
+[LISTING_DEFAULTS]
+quantity_cap = 1
+dispatch_time_max = 1
+condition_id = 1000 (Brand New In Box)
+brand_spec = Unbranded
+shipping_type = Free
+shipping_service = AU_StandardDelivery
+location = Australia
+country = AU
+
+[OUTPUT_FILES]
+workspace_output = pipeline/output_ebay_upload_store2.csv
+root_output = output_ebay_upload_store2.csv
+downloads_batch_output = C:/Users/andre/Downloads/output_ebay_upload_store2_{feed_key}_new_batch.csv
+downloads_master_output = C:/Users/andre/Downloads/output_ebay_upload_store2_all.csv

@@ -1,1 +1,76 @@
-https://res.cloudinary.com/smqochzy/image/upload/v1787670151/ChatGPT_Image_Aug_26_2026_12_31_37_AM.png
+# ==============================================================================
+# EBAY STORE 1 CONFIGURATION PROFILE: PivotLiving
+# ==============================================================================
+# Direct references for quick retrieval:
+# WATERMARK_URL: https://res.cloudinary.com/smqochzy/image/upload/v1787670151/ChatGPT_Image_Aug_26_2026_12_31_37_AM.png
+# TEMPLATE_FILE: pivot_living_template_preview.html
+# SNAPSHOT_FILE: pipeline/snapshots/seen_skus.txt
+# TITLE_SUFFIX:  AU Stock
+# OUTPUT_FILE:   output_ebay_upload_store1.csv
+# ==============================================================================
+
+[STORE_IDENTITY]
+store_id = store1
+store_aliases = store1, store_1, pivot, pivotliving, Pivot Living, pivot_living
+store_name = PivotLiving
+store_url = https://www.ebay.com.au/str/pivotliving
+ebay_site_id = 15 (eBay Australia - ebay.com.au)
+currency = AUD
+
+[SKU_RULES]
+sku_prefix = DSZ-
+custom_label_format = DSZ-{SUPPLIER_SKU}
+
+[TITLE_RULES]
+title_suffix =  AU Stock
+max_title_length = 80
+truncation_mode = word_boundary_safe
+strip_supplier_prefixes = true
+title_formula = [Front-loaded Keywords + Attributes] + " AU Stock" (up to 80 chars)
+
+[WATERMARK_RULES]
+watermark_image_url = https://res.cloudinary.com/smqochzy/image/upload/v1787670151/ChatGPT_Image_Aug_26_2026_12_31_37_AM.png
+watermark_public_id = ChatGPT_Image_Aug_26_2026_12_31_37_AM
+cloudinary_cloud_name = smqochzy
+watermark_gravity = south
+watermark_width_pct = 100
+watermark_x_offset = 0
+watermark_y_offset = 0
+watermark_opacity = 95
+watermark_target = hero_image_1_only (secondary images raw CDN URLs)
+
+[HTML_TEMPLATE]
+template_file = pivot_living_template_preview.html
+template_theme = Artisanal Warm Neutral (#F7F5F0 background, #2C3135 text/accents)
+brand_tagline = Modern Lifestyle Goods
+badge_text = 100% Australian Stock | Ships in 24 Hours | 5–10 Business Days Transit | High Positive Feedback
+
+[SNAPSHOT_RULES]
+delta_snapshot_file = pipeline/snapshots/seen_skus.txt
+backup_snapshot_file = pipeline/snapshots/active_skus_20260903.txt
+active_listings_csv = active_listings.csv
+delta_mode_rule = Filter out previously listed SKUs; append new batch SKUs to seen_skus.txt
+
+[PRICING_RULES]
+pricing_formula = RRP + $5.00 flat fee
+flat_fee = 5.00
+charm_price = true (.99 ending, e.g. $39.99)
+minimum_price = 9.99
+ebay_fee_rate = 0.135 (13.5%)
+apply_active_rebate = true
+
+[LISTING_DEFAULTS]
+quantity_cap = 1
+dispatch_time_max = 1
+condition_id = 1000 (Brand New In Box)
+brand_spec = Unbranded
+shipping_type = Free
+shipping_service = AU_StandardDelivery
+location = Australia
+country = AU
+
+[OUTPUT_FILES]
+workspace_output = pipeline/output_ebay_upload_store1.csv
+root_output = output_ebay_upload_store1.csv
+downloads_batch_output = C:/Users/andre/Downloads/output_ebay_upload_store1_{feed_key}_new_batch.csv
+downloads_master_output = C:/Users/andre/Downloads/output_ebay_upload_store1_all.csv
